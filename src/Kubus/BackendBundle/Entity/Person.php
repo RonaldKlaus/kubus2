@@ -3,6 +3,7 @@
 namespace Kubus\BackendBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Person
@@ -25,7 +26,8 @@ class Person
     /**
      * @var string
      *
-     * @ORM\Column(name="title", type="string", length=10)
+     * @ORM\Column(name="title", type="string", length=10, nullable=true)
+     * 
      */
     private $title;
 
@@ -60,49 +62,49 @@ class Person
     /**
      * @var string
      *
-     * @ORM\Column(name="telephone", type="string", length=255)
+     * @ORM\Column(name="telephone", type="string", length=255, nullable=true)
      */
     private $telephone;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="mobile", type="string", length=255)
+     * @ORM\Column(name="mobile", type="string", length=255, nullable=true)
      */
     private $mobile;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="street", type="string", length=255)
+     * @ORM\Column(name="street", type="string", length=255, nullable=true)
      */
     private $street;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="postcode", type="string", length=255)
+     * @ORM\Column(name="postcode", type="string", length=255, nullable=true)
      */
     private $postcode;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="city", type="string", length=255)
+     * @ORM\Column(name="city", type="string", length=255, nullable=true)
      */
     private $city;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="country", type="string", length=255)
+     * @ORM\Column(name="country", type="string", length=255, nullable=true)
      */
     private $country;
 
     /**
      * @var string
      *
-     * @ORM\Column(name="photo_link", type="string", length=255)
+     * @ORM\Column(name="photo_link", type="string", length=255, nullable=true)
      */
     private $photoLink;
 
@@ -123,17 +125,24 @@ class Person
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="deleted_at", type="datetime")
+     * @ORM\Column(name="deleted_at", type="datetime", nullable=true)
      */
     private $deletedAt;
+
+    /**
+     * @var string
+     *
+     * @ORM\Column(name="password", type="string", length=255, nullable=false)
+     */
+    private $password;
 
     /**
     * Set default values.
     */
     public function __construct()
     {
-        $this->created_at = new \DateTime();
-        $this->updated_at = new \DateTime();
+        $this->createdAt = new \DateTime("Europe/Berlin");
+        $this->updatedAt = new \DateTime("Europe/Berlin");
     }
 
     /**
@@ -141,7 +150,7 @@ class Person
     */
     public function onUpdate()
     {
-        $this->updated_at = new \DateTime();
+        $this->updatedAt = new \DateTime("Europe/Berlin");
     }
 
 
@@ -499,4 +508,29 @@ class Person
     {
         return $this->deletedAt;
     }
+
+    /**
+     * Set password
+     *
+     * @param string $password
+     * @return Person
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    
+        return $this;
+    }
+
+    /**
+     * Get password
+     *
+     * @return string 
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
 }
+
+
