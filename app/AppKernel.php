@@ -22,7 +22,7 @@ class AppKernel extends Kernel
             new Kubus\UserBundle\KubusUserBundle(),
             new Kubus\ManagerBundle\KubusManagerBundle(),
             new Kubus\FrontendBundle\KubusFrontendBundle(),
-            new ´Kubus\BackendBundle\´KubusBackendBundle(),
+            new Kubus\BackendBundle\KubusBackendBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

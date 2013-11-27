@@ -1,6 +1,6 @@
 <?php
 
-namespace ´Kubus\BackendBundle\Tests\Controller;
+namespace Kubus\BackendBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
