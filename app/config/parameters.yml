@@ -1,0 +1,14 @@
+parameters:
+    database_driver:    pdo_pgsql
+    database_host:      127.0.0.1
+    database_port:      5431
+    database_name:      kubus
+    database_user:      ronald
+    database_password:  letmein!
+    mailer_transport:   smtp
+    mailer_host:        127.0.0.1
+    mailer_user:        null
+    mailer_password:    null
+    locale:             en
+    secret:             e031071c6010f34de22baf1b15b1637f67
+    database_path:      '5431'

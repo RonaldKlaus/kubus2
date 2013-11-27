@@ -1,0 +1,7 @@
+parameters:
+#    kubus_public.example.class: Kubus\PublicBundle\Example
+
+services:
+#    kubus_public.example:
+#        class: %kubus_public.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
