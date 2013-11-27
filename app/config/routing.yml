@@ -5,20 +5,3 @@
 kubus_frontend:
     resource: "@KubusFrontendBundle/Resources/config/routing.yml"
     prefix:   /
-
-kubus_manager:
-    resource: "@KubusManagerBundle/Resources/config/routing.yml"
-    prefix:   /manager
-
-kubus_user:
-    resource: "@KubusUserBundle/Resources/config/routing.yml"
-    prefix:   /user/
-
-kubus_admin:
-    resource: "@KubusAdminBundle/Resources/config/routing.yml"
-    prefix:   /admin
-
-kubus_public:
-    resource: "@KubusPublicBundle/Resources/config/routing.yml"
-    prefix:   /
-

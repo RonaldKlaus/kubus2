@@ -17,10 +17,6 @@ class AppKernel extends Kernel
             new Doctrine\Bundle\DoctrineBundle\DoctrineBundle(),
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
             
-            new Kubus\PublicBundle\KubusPublicBundle(),
-            new Kubus\AdminBundle\KubusAdminBundle(),
-            new Kubus\UserBundle\KubusUserBundle(),
-            new Kubus\ManagerBundle\KubusManagerBundle(),
             new Kubus\FrontendBundle\KubusFrontendBundle(),
             new Kubus\BackendBundle\KubusBackendBundle(),
         );

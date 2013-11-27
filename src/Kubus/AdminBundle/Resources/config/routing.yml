@@ -1,3 +1,0 @@
-kubus_admin_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: KubusAdminBundle:Default:index }
