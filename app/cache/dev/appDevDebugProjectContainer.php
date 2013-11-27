@@ -2848,6 +2848,7 @@ class appDevDebugProjectContainer extends Container
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/src/Kubus/AdminBundle/Resources/views', 'KubusAdmin');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/src/Kubus/UserBundle/Resources/views', 'KubusUser');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/src/Kubus/ManagerBundle/Resources/views', 'KubusManager');
+        $instance->addPath('/Users/ronald/Projects/PHP/kubus/src/Kubus/FrontendBundle/Resources/views', 'KubusFrontend');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views', 'WebProfiler');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/views', 'SensioDistribution');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/app/Resources/views');
@@ -3284,6 +3285,7 @@ class appDevDebugProjectContainer extends Container
                 'KubusAdminBundle' => 'Kubus\\AdminBundle\\KubusAdminBundle',
                 'KubusUserBundle' => 'Kubus\\UserBundle\\KubusUserBundle',
                 'KubusManagerBundle' => 'Kubus\\ManagerBundle\\KubusManagerBundle',
+                'KubusFrontendBundle' => 'Kubus\\FrontendBundle\\KubusFrontendBundle',
                 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle',
                 'SensioDistributionBundle' => 'Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle',
                 'SensioGeneratorBundle' => 'Sensio\\Bundle\\GeneratorBundle\\SensioGeneratorBundle',

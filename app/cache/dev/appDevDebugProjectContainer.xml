@@ -20,6 +20,7 @@
       <parameter key="KubusAdminBundle">Kubus\AdminBundle\KubusAdminBundle</parameter>
       <parameter key="KubusUserBundle">Kubus\UserBundle\KubusUserBundle</parameter>
       <parameter key="KubusManagerBundle">Kubus\ManagerBundle\KubusManagerBundle</parameter>
+      <parameter key="KubusFrontendBundle">Kubus\FrontendBundle\KubusFrontendBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
@@ -2627,6 +2628,10 @@
       <call method="addPath">
         <argument>/Users/ronald/Projects/PHP/kubus/src/Kubus/ManagerBundle/Resources/views</argument>
         <argument>KubusManager</argument>
+      </call>
+      <call method="addPath">
+        <argument>/Users/ronald/Projects/PHP/kubus/src/Kubus/FrontendBundle/Resources/views</argument>
+        <argument>KubusFrontend</argument>
       </call>
       <call method="addPath">
         <argument>/Users/ronald/Projects/PHP/kubus/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>

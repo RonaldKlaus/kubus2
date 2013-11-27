@@ -1,0 +1,3 @@
+â´kubus_backend_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: Â´KubusBackendBundle:Default:index }

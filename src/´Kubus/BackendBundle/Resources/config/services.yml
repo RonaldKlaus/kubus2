@@ -1,0 +1,7 @@
+parameters:
+#    â´kubus_backend.example.class: Â´Kubus\BackendBundle\Example
+
+services:
+#    â´kubus_backend.example:
+#        class: %â´kubus_backend.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
