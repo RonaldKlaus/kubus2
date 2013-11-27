@@ -128,6 +128,17 @@ class appDevDebugProjectContainer extends Container
             'monolog.logger.router' => 'getMonolog_Logger_RouterService',
             'monolog.logger.security' => 'getMonolog_Logger_SecurityService',
             'monolog.logger.templating' => 'getMonolog_Logger_TemplatingService',
+            'mopa_bootstrap.form.type.tab' => 'getMopaBootstrap_Form_Type_TabService',
+            'mopa_bootstrap.form.type_extension.button' => 'getMopaBootstrap_Form_TypeExtension_ButtonService',
+            'mopa_bootstrap.form.type_extension.date' => 'getMopaBootstrap_Form_TypeExtension_DateService',
+            'mopa_bootstrap.form.type_extension.error' => 'getMopaBootstrap_Form_TypeExtension_ErrorService',
+            'mopa_bootstrap.form.type_extension.help' => 'getMopaBootstrap_Form_TypeExtension_HelpService',
+            'mopa_bootstrap.form.type_extension.horizontal' => 'getMopaBootstrap_Form_TypeExtension_HorizontalService',
+            'mopa_bootstrap.form.type_extension.legend' => 'getMopaBootstrap_Form_TypeExtension_LegendService',
+            'mopa_bootstrap.form.type_extension.tabbed' => 'getMopaBootstrap_Form_TypeExtension_TabbedService',
+            'mopa_bootstrap.form.type_extension.widget' => 'getMopaBootstrap_Form_TypeExtension_WidgetService',
+            'mopa_bootstrap.form.type_extension.widget_collection' => 'getMopaBootstrap_Form_TypeExtension_WidgetCollectionService',
+            'mopa_bootstrap.twig.extension.bootstrap_form' => 'getMopaBootstrap_Twig_Extension_BootstrapFormService',
             'profiler' => 'getProfilerService',
             'profiler_listener' => 'getProfilerListenerService',
             'property_accessor' => 'getPropertyAccessorService',
@@ -702,7 +713,7 @@ class appDevDebugProjectContainer extends Container
      */
     protected function getForm_RegistryService()
     {
-        return $this->services['form.registry'] = new \Symfony\Component\Form\FormRegistry(array(0 => new \Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension($this, array('form' => 'form.type.form', 'birthday' => 'form.type.birthday', 'checkbox' => 'form.type.checkbox', 'choice' => 'form.type.choice', 'collection' => 'form.type.collection', 'country' => 'form.type.country', 'date' => 'form.type.date', 'datetime' => 'form.type.datetime', 'email' => 'form.type.email', 'file' => 'form.type.file', 'hidden' => 'form.type.hidden', 'integer' => 'form.type.integer', 'language' => 'form.type.language', 'locale' => 'form.type.locale', 'money' => 'form.type.money', 'number' => 'form.type.number', 'password' => 'form.type.password', 'percent' => 'form.type.percent', 'radio' => 'form.type.radio', 'repeated' => 'form.type.repeated', 'search' => 'form.type.search', 'textarea' => 'form.type.textarea', 'text' => 'form.type.text', 'time' => 'form.type.time', 'timezone' => 'form.type.timezone', 'url' => 'form.type.url', 'button' => 'form.type.button', 'submit' => 'form.type.submit', 'reset' => 'form.type.reset', 'currency' => 'form.type.currency', 'entity' => 'form.type.entity'), array('form' => array(0 => 'form.type_extension.form.http_foundation', 1 => 'form.type_extension.form.validator', 2 => 'form.type_extension.csrf'), 'repeated' => array(0 => 'form.type_extension.repeated.validator'), 'submit' => array(0 => 'form.type_extension.submit.validator')), array(0 => 'form.type_guesser.validator', 1 => 'form.type_guesser.doctrine'))), $this->get('form.resolved_type_factory'));
+        return $this->services['form.registry'] = new \Symfony\Component\Form\FormRegistry(array(0 => new \Symfony\Component\Form\Extension\DependencyInjection\DependencyInjectionExtension($this, array('form' => 'form.type.form', 'birthday' => 'form.type.birthday', 'checkbox' => 'form.type.checkbox', 'choice' => 'form.type.choice', 'collection' => 'form.type.collection', 'country' => 'form.type.country', 'date' => 'form.type.date', 'datetime' => 'form.type.datetime', 'email' => 'form.type.email', 'file' => 'form.type.file', 'hidden' => 'form.type.hidden', 'integer' => 'form.type.integer', 'language' => 'form.type.language', 'locale' => 'form.type.locale', 'money' => 'form.type.money', 'number' => 'form.type.number', 'password' => 'form.type.password', 'percent' => 'form.type.percent', 'radio' => 'form.type.radio', 'repeated' => 'form.type.repeated', 'search' => 'form.type.search', 'textarea' => 'form.type.textarea', 'text' => 'form.type.text', 'time' => 'form.type.time', 'timezone' => 'form.type.timezone', 'url' => 'form.type.url', 'button' => 'form.type.button', 'submit' => 'form.type.submit', 'reset' => 'form.type.reset', 'currency' => 'form.type.currency', 'entity' => 'form.type.entity', 'tab' => 'mopa_bootstrap.form.type.tab'), array('form' => array(0 => 'form.type_extension.form.http_foundation', 1 => 'form.type_extension.form.validator', 2 => 'form.type_extension.csrf', 3 => 'mopa_bootstrap.form.type_extension.help', 4 => 'mopa_bootstrap.form.type_extension.legend', 5 => 'mopa_bootstrap.form.type_extension.error', 6 => 'mopa_bootstrap.form.type_extension.widget', 7 => 'mopa_bootstrap.form.type_extension.horizontal', 8 => 'mopa_bootstrap.form.type_extension.widget_collection', 9 => 'mopa_bootstrap.form.type_extension.tabbed'), 'repeated' => array(0 => 'form.type_extension.repeated.validator'), 'submit' => array(0 => 'form.type_extension.submit.validator'), 'button' => array(0 => 'mopa_bootstrap.form.type_extension.button'), 'date' => array(0 => 'mopa_bootstrap.form.type_extension.date')), array(0 => 'form.type_guesser.validator', 1 => 'form.type_guesser.doctrine'))), $this->get('form.resolved_type_factory'));
     }
 
     /**
@@ -1571,6 +1582,149 @@ class appDevDebugProjectContainer extends Container
         $instance->pushHandler($this->get('monolog.handler.debug'));
 
         return $instance;
+    }
+
+    /**
+     * Gets the 'mopa_bootstrap.form.type.tab' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Mopa\Bundle\BootstrapBundle\Form\Type\TabType A Mopa\Bundle\BootstrapBundle\Form\Type\TabType instance.
+     */
+    protected function getMopaBootstrap_Form_Type_TabService()
+    {
+        return $this->services['mopa_bootstrap.form.type.tab'] = new \Mopa\Bundle\BootstrapBundle\Form\Type\TabType();
+    }
+
+    /**
+     * Gets the 'mopa_bootstrap.form.type_extension.button' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Mopa\Bundle\BootstrapBundle\Form\Extension\IconButtonExtension A Mopa\Bundle\BootstrapBundle\Form\Extension\IconButtonExtension instance.
+     */
+    protected function getMopaBootstrap_Form_TypeExtension_ButtonService()
+    {
+        return $this->services['mopa_bootstrap.form.type_extension.button'] = new \Mopa\Bundle\BootstrapBundle\Form\Extension\IconButtonExtension();
+    }
+
+    /**
+     * Gets the 'mopa_bootstrap.form.type_extension.date' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Mopa\Bundle\BootstrapBundle\Form\Extension\DateTypeExtension A Mopa\Bundle\BootstrapBundle\Form\Extension\DateTypeExtension instance.
+     */
+    protected function getMopaBootstrap_Form_TypeExtension_DateService()
+    {
+        return $this->services['mopa_bootstrap.form.type_extension.date'] = new \Mopa\Bundle\BootstrapBundle\Form\Extension\DateTypeExtension();
+    }
+
+    /**
+     * Gets the 'mopa_bootstrap.form.type_extension.error' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Mopa\Bundle\BootstrapBundle\Form\Extension\ErrorTypeFormTypeExtension A Mopa\Bundle\BootstrapBundle\Form\Extension\ErrorTypeFormTypeExtension instance.
+     */
+    protected function getMopaBootstrap_Form_TypeExtension_ErrorService()
+    {
+        return $this->services['mopa_bootstrap.form.type_extension.error'] = new \Mopa\Bundle\BootstrapBundle\Form\Extension\ErrorTypeFormTypeExtension(array('error_type' => NULL));
+    }
+
+    /**
+     * Gets the 'mopa_bootstrap.form.type_extension.help' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Mopa\Bundle\BootstrapBundle\Form\Extension\HelpFormTypeExtension A Mopa\Bundle\BootstrapBundle\Form\Extension\HelpFormTypeExtension instance.
+     */
+    protected function getMopaBootstrap_Form_TypeExtension_HelpService()
+    {
+        return $this->services['mopa_bootstrap.form.type_extension.help'] = new \Mopa\Bundle\BootstrapBundle\Form\Extension\HelpFormTypeExtension(array('help_label_tooltip' => array('title' => NULL, 'text' => NULL, 'icon' => 'info-sign', 'placement' => 'top'), 'help_label_popover' => array('title' => NULL, 'content' => NULL, 'text' => NULL, 'icon' => 'info-sign', 'placement' => 'top'), 'help_widget_popover' => array('title' => NULL, 'content' => NULL, 'trigger' => 'hover', 'toggle' => 'popover', 'placement' => 'right')));
+    }
+
+    /**
+     * Gets the 'mopa_bootstrap.form.type_extension.horizontal' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Mopa\Bundle\BootstrapBundle\Form\Extension\HorizontalFormTypeExtension A Mopa\Bundle\BootstrapBundle\Form\Extension\HorizontalFormTypeExtension instance.
+     */
+    protected function getMopaBootstrap_Form_TypeExtension_HorizontalService()
+    {
+        return $this->services['mopa_bootstrap.form.type_extension.horizontal'] = new \Mopa\Bundle\BootstrapBundle\Form\Extension\HorizontalFormTypeExtension(array('horizontal_label_class' => 'col-lg-3 control-label', 'horizontal_label_offset_class' => 'col-lg-offset-3', 'horizontal_input_wrapper_class' => 'col-lg-9'));
+    }
+
+    /**
+     * Gets the 'mopa_bootstrap.form.type_extension.legend' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Mopa\Bundle\BootstrapBundle\Form\Extension\LegendFormTypeExtension A Mopa\Bundle\BootstrapBundle\Form\Extension\LegendFormTypeExtension instance.
+     */
+    protected function getMopaBootstrap_Form_TypeExtension_LegendService()
+    {
+        return $this->services['mopa_bootstrap.form.type_extension.legend'] = new \Mopa\Bundle\BootstrapBundle\Form\Extension\LegendFormTypeExtension(array('render_fieldset' => true, 'show_legend' => true, 'show_child_legend' => false, 'render_required_asterisk' => false, 'render_optional_text' => true));
+    }
+
+    /**
+     * Gets the 'mopa_bootstrap.form.type_extension.tabbed' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Mopa\Bundle\BootstrapBundle\Form\Extension\TabbedFormTypeExtension A Mopa\Bundle\BootstrapBundle\Form\Extension\TabbedFormTypeExtension instance.
+     */
+    protected function getMopaBootstrap_Form_TypeExtension_TabbedService()
+    {
+        return $this->services['mopa_bootstrap.form.type_extension.tabbed'] = new \Mopa\Bundle\BootstrapBundle\Form\Extension\TabbedFormTypeExtension($this->get('form.factory'), array('class' => 'nav nav-tabs'));
+    }
+
+    /**
+     * Gets the 'mopa_bootstrap.form.type_extension.widget' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Mopa\Bundle\BootstrapBundle\Form\Extension\WidgetFormTypeExtension A Mopa\Bundle\BootstrapBundle\Form\Extension\WidgetFormTypeExtension instance.
+     */
+    protected function getMopaBootstrap_Form_TypeExtension_WidgetService()
+    {
+        return $this->services['mopa_bootstrap.form.type_extension.widget'] = new \Mopa\Bundle\BootstrapBundle\Form\Extension\WidgetFormTypeExtension(array('checkbox_label' => 'both'));
+    }
+
+    /**
+     * Gets the 'mopa_bootstrap.form.type_extension.widget_collection' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Mopa\Bundle\BootstrapBundle\Form\Extension\WidgetCollectionFormTypeExtension A Mopa\Bundle\BootstrapBundle\Form\Extension\WidgetCollectionFormTypeExtension instance.
+     */
+    protected function getMopaBootstrap_Form_TypeExtension_WidgetCollectionService()
+    {
+        return $this->services['mopa_bootstrap.form.type_extension.widget_collection'] = new \Mopa\Bundle\BootstrapBundle\Form\Extension\WidgetCollectionFormTypeExtension(array('render_collection_item' => true, 'widget_add_btn' => array('attr' => array('class' => 'btn btn-default'), 'label' => 'add_item', 'icon' => NULL, 'icon_color' => NULL), 'widget_remove_btn' => array('attr' => array('class' => 'btn btn-default'), 'label' => 'remove_item', 'icon' => NULL, 'icon_color' => NULL)));
+    }
+
+    /**
+     * Gets the 'mopa_bootstrap.twig.extension.bootstrap_form' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return Mopa\Bundle\BootstrapBundle\Twig\MopaBootstrapTwigExtension A Mopa\Bundle\BootstrapBundle\Twig\MopaBootstrapTwigExtension instance.
+     */
+    protected function getMopaBootstrap_Twig_Extension_BootstrapFormService()
+    {
+        return $this->services['mopa_bootstrap.twig.extension.bootstrap_form'] = new \Mopa\Bundle\BootstrapBundle\Twig\MopaBootstrapTwigExtension($this);
     }
 
     /**
@@ -2795,10 +2949,11 @@ class appDevDebugProjectContainer extends Container
         $instance->addExtension(new \Symfony\Bridge\Twig\Extension\RoutingExtension($this->get('router')));
         $instance->addExtension(new \Symfony\Bridge\Twig\Extension\YamlExtension());
         $instance->addExtension(new \Symfony\Bridge\Twig\Extension\HttpKernelExtension($this->get('fragment.handler')));
-        $instance->addExtension(new \Symfony\Bridge\Twig\Extension\FormExtension(new \Symfony\Bridge\Twig\Form\TwigRenderer(new \Symfony\Bridge\Twig\Form\TwigRendererEngine(array(0 => 'form_div_layout.html.twig')), $this->get('form.csrf_provider', ContainerInterface::NULL_ON_INVALID_REFERENCE))));
+        $instance->addExtension(new \Symfony\Bridge\Twig\Extension\FormExtension(new \Symfony\Bridge\Twig\Form\TwigRenderer(new \Symfony\Bridge\Twig\Form\TwigRendererEngine(array(0 => 'form_div_layout.html.twig', 1 => 'MopaBootstrapBundle:Form:fields.html.twig')), $this->get('form.csrf_provider', ContainerInterface::NULL_ON_INVALID_REFERENCE))));
         $instance->addExtension(new \Twig_Extension_Debug());
         $instance->addExtension(new \Symfony\Bundle\AsseticBundle\Twig\AsseticExtension($this->get('assetic.asset_factory'), $this->get('templating.name_parser'), true, array(), array(), $this->get('assetic.value_supplier.default', ContainerInterface::NULL_ON_INVALID_REFERENCE)));
         $instance->addExtension(new \Doctrine\Bundle\DoctrineBundle\Twig\DoctrineExtension());
+        $instance->addExtension($this->get('mopa_bootstrap.twig.extension.bootstrap_form'));
         $instance->addGlobal('app', $this->get('templating.globals'));
 
         return $instance;
@@ -2847,6 +3002,7 @@ class appDevDebugProjectContainer extends Container
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views', 'Twig');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/vendor/symfony/swiftmailer-bundle/Symfony/Bundle/SwiftmailerBundle/Resources/views', 'Swiftmailer');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/vendor/doctrine/doctrine-bundle/Doctrine/Bundle/DoctrineBundle/Resources/views', 'Doctrine');
+        $instance->addPath('/Users/ronald/Projects/PHP/kubus/vendor/mopa/bootstrap-bundle/Mopa/Bundle/BootstrapBundle/Resources/views', 'MopaBootstrap');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/src/Kubus/FrontendBundle/Resources/views', 'KubusFrontend');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/src/Kubus/BackendBundle/Resources/views', 'KubusBackend');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views', 'WebProfiler');
@@ -3282,6 +3438,7 @@ class appDevDebugProjectContainer extends Container
                 'DoctrineBundle' => 'Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle',
                 'DoctrineFixturesBundle' => 'Doctrine\\Bundle\\FixturesBundle\\DoctrineFixturesBundle',
                 'SensioFrameworkExtraBundle' => 'Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle',
+                'MopaBootstrapBundle' => 'Mopa\\Bundle\\BootstrapBundle\\MopaBootstrapBundle',
                 'KubusFrontendBundle' => 'Kubus\\FrontendBundle\\KubusFrontendBundle',
                 'KubusBackendBundle' => 'Kubus\\BackendBundle\\KubusBackendBundle',
                 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle',
@@ -3573,6 +3730,7 @@ class appDevDebugProjectContainer extends Container
             'twig.exception_listener.controller' => 'twig.controller.exception:showAction',
             'twig.form.resources' => array(
                 0 => 'form_div_layout.html.twig',
+                1 => 'MopaBootstrapBundle:Form:fields.html.twig',
             ),
             'debug.templating.engine.twig.class' => 'Symfony\\Bundle\\TwigBundle\\Debug\\TimedTwigEngine',
             'twig.options' => array(
@@ -3680,7 +3838,7 @@ class appDevDebugProjectContainer extends Container
             ),
             'assetic.java.bin' => '/usr/bin/java',
             'assetic.node.bin' => '/usr/bin/node',
-            'assetic.ruby.bin' => '/Applications/mappstack-5.4.22-0/ruby/bin/ruby',
+            'assetic.ruby.bin' => '/usr/bin/ruby',
             'assetic.sass.bin' => '/usr/bin/sass',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',
             'assetic.twig_extension.functions' => array(
@@ -3759,6 +3917,66 @@ class appDevDebugProjectContainer extends Container
             'sensio_framework_extra.converter.doctrine.class' => 'Sensio\\Bundle\\FrameworkExtraBundle\\Request\\ParamConverter\\DoctrineParamConverter',
             'sensio_framework_extra.converter.datetime.class' => 'Sensio\\Bundle\\FrameworkExtraBundle\\Request\\ParamConverter\\DateTimeParamConverter',
             'sensio_framework_extra.view.listener.class' => 'Sensio\\Bundle\\FrameworkExtraBundle\\EventListener\\TemplateListener',
+            'mopa_bootstrap.twig.extension.bootstrap_form.class' => 'Mopa\\Bundle\\BootstrapBundle\\Twig\\MopaBootstrapTwigExtension',
+            'mopa_bootstrap.form.type_extension.button.class' => 'Mopa\\Bundle\\BootstrapBundle\\Form\\Extension\\IconButtonExtension',
+            'mopa_bootstrap.form.type_extension.help.class' => 'Mopa\\Bundle\\BootstrapBundle\\Form\\Extension\\HelpFormTypeExtension',
+            'mopa_bootstrap.form.type_extension.legend.class' => 'Mopa\\Bundle\\BootstrapBundle\\Form\\Extension\\LegendFormTypeExtension',
+            'mopa_bootstrap.form.type_extension.error.class' => 'Mopa\\Bundle\\BootstrapBundle\\Form\\Extension\\ErrorTypeFormTypeExtension',
+            'mopa_bootstrap.form.type_extension.widget.class' => 'Mopa\\Bundle\\BootstrapBundle\\Form\\Extension\\WidgetFormTypeExtension',
+            'mopa_bootstrap.form.type_extension.horizontal.class' => 'Mopa\\Bundle\\BootstrapBundle\\Form\\Extension\\HorizontalFormTypeExtension',
+            'mopa_bootstrap.form.type_extension.widget_collection.class' => 'Mopa\\Bundle\\BootstrapBundle\\Form\\Extension\\WidgetCollectionFormTypeExtension',
+            'mopa_bootstrap.form.type_extension.date.class' => 'Mopa\\Bundle\\BootstrapBundle\\Form\\Extension\\DateTypeExtension',
+            'mopa_bootstrap.form.type_extension.tabbed.class' => 'Mopa\\Bundle\\BootstrapBundle\\Form\\Extension\\TabbedFormTypeExtension',
+            'mopa_bootstrap.form.type.tab.class' => 'Mopa\\Bundle\\BootstrapBundle\\Form\\Type\\TabType',
+            'mopa_bootstrap.form.templating' => 'MopaBootstrapBundle:Form:fields.html.twig',
+            'mopa_bootstrap.form.horizontal_label_class' => 'col-lg-3 control-label',
+            'mopa_bootstrap.form.horizontal_label_offset_class' => 'col-lg-offset-3',
+            'mopa_bootstrap.form.horizontal_input_wrapper_class' => 'col-lg-9',
+            'mopa_bootstrap.form.render_fieldset' => true,
+            'mopa_bootstrap.form.render_collection_item' => true,
+            'mopa_bootstrap.form.show_legend' => true,
+            'mopa_bootstrap.form.show_child_legend' => false,
+            'mopa_bootstrap.form.checkbox_label' => 'both',
+            'mopa_bootstrap.form.render_optional_text' => true,
+            'mopa_bootstrap.form.render_required_asterisk' => false,
+            'mopa_bootstrap.form.error_type' => NULL,
+            'mopa_bootstrap.form.tabs.class' => 'nav nav-tabs',
+            'mopa_bootstrap.form.help_widget.popover' => array(
+                'title' => NULL,
+                'content' => NULL,
+                'trigger' => 'hover',
+                'toggle' => 'popover',
+                'placement' => 'right',
+            ),
+            'mopa_bootstrap.form.help_label.tooltip' => array(
+                'title' => NULL,
+                'text' => NULL,
+                'icon' => 'info-sign',
+                'placement' => 'top',
+            ),
+            'mopa_bootstrap.form.help_label.popover' => array(
+                'title' => NULL,
+                'content' => NULL,
+                'text' => NULL,
+                'icon' => 'info-sign',
+                'placement' => 'top',
+            ),
+            'mopa_bootstrap.form.collection.widget_remove_btn' => array(
+                'attr' => array(
+                    'class' => 'btn btn-default',
+                ),
+                'label' => 'remove_item',
+                'icon' => NULL,
+                'icon_color' => NULL,
+            ),
+            'mopa_bootstrap.form.collection.widget_add_btn' => array(
+                'attr' => array(
+                    'class' => 'btn btn-default',
+                ),
+                'label' => 'add_item',
+                'icon' => NULL,
+                'icon_color' => NULL,
+            ),
             'web_profiler.controller.profiler.class' => 'Symfony\\Bundle\\WebProfilerBundle\\Controller\\ProfilerController',
             'web_profiler.controller.router.class' => 'Symfony\\Bundle\\WebProfilerBundle\\Controller\\RouterController',
             'web_profiler.controller.exception.class' => 'Symfony\\Bundle\\WebProfilerBundle\\Controller\\ExceptionController',
