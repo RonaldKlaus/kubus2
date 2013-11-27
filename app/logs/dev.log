@@ -2728,3 +2728,35 @@
 [2013-11-27 02:01:03] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
 [2013-11-27 02:01:03] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
 [2013-11-27 02:01:03] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2013-11-27 12:53:55] doctrine.DEBUG: SELECT
+                    c.relname, n.nspname AS schemaname
+                FROM
+                   pg_class c, pg_namespace n
+                WHERE relkind = 'S' AND n.oid = c.relnamespace AND
+                    (n.nspname NOT LIKE 'pg_%' AND n.nspname != 'information_schema') [] []
+[2013-11-27 12:53:55] doctrine.DEBUG: SELECT tablename AS table_name, schemaname AS schema_name
+                FROM pg_tables WHERE schemaname NOT LIKE 'pg_%' AND schemaname != 'information_schema' AND tablename != 'geometry_columns' AND tablename != 'spatial_ref_sys' [] []
+[2013-11-27 12:53:55] doctrine.DEBUG: SHOW search_path [] []
+[2013-11-27 12:53:55] doctrine.DEBUG: SHOW search_path [] []
+[2013-11-27 12:54:21] doctrine.DEBUG: SELECT
+                    c.relname, n.nspname AS schemaname
+                FROM
+                   pg_class c, pg_namespace n
+                WHERE relkind = 'S' AND n.oid = c.relnamespace AND
+                    (n.nspname NOT LIKE 'pg_%' AND n.nspname != 'information_schema') [] []
+[2013-11-27 12:54:21] doctrine.DEBUG: SELECT tablename AS table_name, schemaname AS schema_name
+                FROM pg_tables WHERE schemaname NOT LIKE 'pg_%' AND schemaname != 'information_schema' AND tablename != 'geometry_columns' AND tablename != 'spatial_ref_sys' [] []
+[2013-11-27 12:54:21] doctrine.DEBUG: SHOW search_path [] []
+[2013-11-27 12:54:21] doctrine.DEBUG: SHOW search_path [] []
+[2013-11-27 12:54:21] doctrine.DEBUG: SELECT
+                    c.relname, n.nspname AS schemaname
+                FROM
+                   pg_class c, pg_namespace n
+                WHERE relkind = 'S' AND n.oid = c.relnamespace AND
+                    (n.nspname NOT LIKE 'pg_%' AND n.nspname != 'information_schema') [] []
+[2013-11-27 12:54:21] doctrine.DEBUG: SELECT tablename AS table_name, schemaname AS schema_name
+                FROM pg_tables WHERE schemaname NOT LIKE 'pg_%' AND schemaname != 'information_schema' AND tablename != 'geometry_columns' AND tablename != 'spatial_ref_sys' [] []
+[2013-11-27 12:54:21] doctrine.DEBUG: SHOW search_path [] []
+[2013-11-27 12:54:21] doctrine.DEBUG: SHOW search_path [] []
+[2013-11-27 12:54:21] doctrine.DEBUG: CREATE SEQUENCE Person_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2013-11-27 12:54:21] doctrine.DEBUG: CREATE TABLE Person (id INT NOT NULL, title VARCHAR(10) NOT NULL, lastname VARCHAR(255) NOT NULL, firstname VARCHAR(255) NOT NULL, gender VARCHAR(1) NOT NULL, email VARCHAR(255) NOT NULL, telephone VARCHAR(255) NOT NULL, mobile VARCHAR(255) NOT NULL, street VARCHAR(255) NOT NULL, postcode VARCHAR(255) NOT NULL, city VARCHAR(255) NOT NULL, country VARCHAR(255) NOT NULL, photo_link VARCHAR(255) NOT NULL, created_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, updated_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, deleted_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, PRIMARY KEY(id)) [] []
