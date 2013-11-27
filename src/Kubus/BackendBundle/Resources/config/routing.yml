@@ -1,3 +1,4 @@
-kubus_backend_homepage:
-    pattern:  /hello/{name}
-    defaults: { _controller: KubusBackendBundle:Default:index }
+kubus_backend_person:
+    resource: "@KubusBackendBundle/Resources/config/routing/person.yml"
+    prefix:   /person
+

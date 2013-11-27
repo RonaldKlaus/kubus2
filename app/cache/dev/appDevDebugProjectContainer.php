@@ -3680,7 +3680,7 @@ class appDevDebugProjectContainer extends Container
             ),
             'assetic.java.bin' => '/usr/bin/java',
             'assetic.node.bin' => '/usr/bin/node',
-            'assetic.ruby.bin' => '/usr/bin/ruby',
+            'assetic.ruby.bin' => '/Applications/mappstack-5.4.22-0/ruby/bin/ruby',
             'assetic.sass.bin' => '/usr/bin/sass',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',
             'assetic.twig_extension.functions' => array(
