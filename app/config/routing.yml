@@ -1,6 +1,6 @@
-â´kubus_backend:
-    resource: "@Â´KubusBackendBundle/Resources/config/routing.yml"
-    prefix:   /
+kubus_backend:
+    resource: "@KubusBackendBundle/Resources/config/routing.yml"
+    prefix:   /backend/
 
 kubus_frontend:
     resource: "@KubusFrontendBundle/Resources/config/routing.yml"

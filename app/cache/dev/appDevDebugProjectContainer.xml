@@ -16,11 +16,8 @@
       <parameter key="AsseticBundle">Symfony\Bundle\AsseticBundle\AsseticBundle</parameter>
       <parameter key="DoctrineBundle">Doctrine\Bundle\DoctrineBundle\DoctrineBundle</parameter>
       <parameter key="SensioFrameworkExtraBundle">Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle</parameter>
-      <parameter key="KubusPublicBundle">Kubus\PublicBundle\KubusPublicBundle</parameter>
-      <parameter key="KubusAdminBundle">Kubus\AdminBundle\KubusAdminBundle</parameter>
-      <parameter key="KubusUserBundle">Kubus\UserBundle\KubusUserBundle</parameter>
-      <parameter key="KubusManagerBundle">Kubus\ManagerBundle\KubusManagerBundle</parameter>
       <parameter key="KubusFrontendBundle">Kubus\FrontendBundle\KubusFrontendBundle</parameter>
+      <parameter key="KubusBackendBundle">Kubus\BackendBundle\KubusBackendBundle</parameter>
       <parameter key="WebProfilerBundle">Symfony\Bundle\WebProfilerBundle\WebProfilerBundle</parameter>
       <parameter key="SensioDistributionBundle">Sensio\Bundle\DistributionBundle\SensioDistributionBundle</parameter>
       <parameter key="SensioGeneratorBundle">Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle</parameter>
@@ -401,7 +398,7 @@
     <parameter key="assetic.variables" type="collection"/>
     <parameter key="assetic.java.bin">/usr/bin/java</parameter>
     <parameter key="assetic.node.bin">/usr/bin/node</parameter>
-    <parameter key="assetic.ruby.bin">/usr/bin/ruby</parameter>
+    <parameter key="assetic.ruby.bin">/Applications/mappstack-5.4.22-0/ruby/bin/ruby</parameter>
     <parameter key="assetic.sass.bin">/usr/bin/sass</parameter>
     <parameter key="assetic.filter.cssrewrite.class">Assetic\Filter\CssRewriteFilter</parameter>
     <parameter key="assetic.twig_extension.functions" type="collection"/>
@@ -2614,24 +2611,12 @@
         <argument>Doctrine</argument>
       </call>
       <call method="addPath">
-        <argument>/Users/ronald/Projects/PHP/kubus/src/Kubus/PublicBundle/Resources/views</argument>
-        <argument>KubusPublic</argument>
-      </call>
-      <call method="addPath">
-        <argument>/Users/ronald/Projects/PHP/kubus/src/Kubus/AdminBundle/Resources/views</argument>
-        <argument>KubusAdmin</argument>
-      </call>
-      <call method="addPath">
-        <argument>/Users/ronald/Projects/PHP/kubus/src/Kubus/UserBundle/Resources/views</argument>
-        <argument>KubusUser</argument>
-      </call>
-      <call method="addPath">
-        <argument>/Users/ronald/Projects/PHP/kubus/src/Kubus/ManagerBundle/Resources/views</argument>
-        <argument>KubusManager</argument>
-      </call>
-      <call method="addPath">
         <argument>/Users/ronald/Projects/PHP/kubus/src/Kubus/FrontendBundle/Resources/views</argument>
         <argument>KubusFrontend</argument>
+      </call>
+      <call method="addPath">
+        <argument>/Users/ronald/Projects/PHP/kubus/src/Kubus/BackendBundle/Resources/views</argument>
+        <argument>KubusBackend</argument>
       </call>
       <call method="addPath">
         <argument>/Users/ronald/Projects/PHP/kubus/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views</argument>

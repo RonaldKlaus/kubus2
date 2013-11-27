@@ -2844,11 +2844,8 @@ class appDevDebugProjectContainer extends Container
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/views', 'Twig');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/vendor/symfony/swiftmailer-bundle/Symfony/Bundle/SwiftmailerBundle/Resources/views', 'Swiftmailer');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/vendor/doctrine/doctrine-bundle/Doctrine/Bundle/DoctrineBundle/Resources/views', 'Doctrine');
-        $instance->addPath('/Users/ronald/Projects/PHP/kubus/src/Kubus/PublicBundle/Resources/views', 'KubusPublic');
-        $instance->addPath('/Users/ronald/Projects/PHP/kubus/src/Kubus/AdminBundle/Resources/views', 'KubusAdmin');
-        $instance->addPath('/Users/ronald/Projects/PHP/kubus/src/Kubus/UserBundle/Resources/views', 'KubusUser');
-        $instance->addPath('/Users/ronald/Projects/PHP/kubus/src/Kubus/ManagerBundle/Resources/views', 'KubusManager');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/src/Kubus/FrontendBundle/Resources/views', 'KubusFrontend');
+        $instance->addPath('/Users/ronald/Projects/PHP/kubus/src/Kubus/BackendBundle/Resources/views', 'KubusBackend');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views', 'WebProfiler');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/vendor/sensio/distribution-bundle/Sensio/Bundle/DistributionBundle/Resources/views', 'SensioDistribution');
         $instance->addPath('/Users/ronald/Projects/PHP/kubus/app/Resources/views');
@@ -3281,11 +3278,8 @@ class appDevDebugProjectContainer extends Container
                 'AsseticBundle' => 'Symfony\\Bundle\\AsseticBundle\\AsseticBundle',
                 'DoctrineBundle' => 'Doctrine\\Bundle\\DoctrineBundle\\DoctrineBundle',
                 'SensioFrameworkExtraBundle' => 'Sensio\\Bundle\\FrameworkExtraBundle\\SensioFrameworkExtraBundle',
-                'KubusPublicBundle' => 'Kubus\\PublicBundle\\KubusPublicBundle',
-                'KubusAdminBundle' => 'Kubus\\AdminBundle\\KubusAdminBundle',
-                'KubusUserBundle' => 'Kubus\\UserBundle\\KubusUserBundle',
-                'KubusManagerBundle' => 'Kubus\\ManagerBundle\\KubusManagerBundle',
                 'KubusFrontendBundle' => 'Kubus\\FrontendBundle\\KubusFrontendBundle',
+                'KubusBackendBundle' => 'Kubus\\BackendBundle\\KubusBackendBundle',
                 'WebProfilerBundle' => 'Symfony\\Bundle\\WebProfilerBundle\\WebProfilerBundle',
                 'SensioDistributionBundle' => 'Sensio\\Bundle\\DistributionBundle\\SensioDistributionBundle',
                 'SensioGeneratorBundle' => 'Sensio\\Bundle\\GeneratorBundle\\SensioGeneratorBundle',
@@ -3682,7 +3676,7 @@ class appDevDebugProjectContainer extends Container
             ),
             'assetic.java.bin' => '/usr/bin/java',
             'assetic.node.bin' => '/usr/bin/node',
-            'assetic.ruby.bin' => '/usr/bin/ruby',
+            'assetic.ruby.bin' => '/Applications/mappstack-5.4.22-0/ruby/bin/ruby',
             'assetic.sass.bin' => '/usr/bin/sass',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',
             'assetic.twig_extension.functions' => array(
