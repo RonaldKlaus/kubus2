@@ -1,0 +1,3 @@
+{% macro icon(name, inverted) %}
+<span class="glyphicon glyphicon-{{ name }}"{% if inverted|default(false) %} style="color: white;"{% endif %}></span>
+{% endmacro %}
