@@ -3268,7 +3268,7 @@ class appDevDebugProjectContainer extends Container
             'kernel.root_dir' => '/Users/ronald/Projects/PHP/kubus/app',
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
-            'kernel.name' => 'ap_',
+            'kernel.name' => 'app',
             'kernel.cache_dir' => '/Users/ronald/Projects/PHP/kubus/app/cache/dev',
             'kernel.logs_dir' => '/Users/ronald/Projects/PHP/kubus/app/logs',
             'kernel.bundles' => array(
