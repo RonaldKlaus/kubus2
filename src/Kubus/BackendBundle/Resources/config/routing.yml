@@ -2,3 +2,14 @@ kubus_backend_person:
     resource: "@KubusBackendBundle/Resources/config/routing/person.yml"
     prefix:   /person
 
+login:
+    pattern: /login
+    defaults: { _controller: KubusBackendBundle:Authentication:login }
+
+logout:
+    pattern: /logout
+    defaults: { _controller: KubusBackendBundle:Authentication:logout }
+
+index:
+    pattern: /
+    defaults: { _controller: KubusBackendBundle:Navigation:index }

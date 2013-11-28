@@ -1,15 +1,15 @@
 {% extends '::base.html.twig' %}
-<h1>KuBuS - Backend</h1>
+
 {% block body %}
 
-	{% block head %}
+	{% block head %}	
+		<h1>KuBuS - Backend</h1> 
+		{{ include('KubusBackendBundle::_navigation.html.twig') }}
 	{% endblock %}
 
-	{% block content %}
-	{% endblock %}
+	{% block content %}	{% endblock %}
 
 
-	{% block footer %}
-	{% endblock %}
+	{% block footer %}	{% endblock %}
 
 {% endblock %}

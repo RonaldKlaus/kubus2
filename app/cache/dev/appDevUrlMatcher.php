@@ -133,63 +133,88 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        if (0 === strpos($pathinfo, '/backend/person')) {
-            // person
-            if (rtrim($pathinfo, '/') === '/backend/person') {
+        if (0 === strpos($pathinfo, '/backend')) {
+            if (0 === strpos($pathinfo, '/backend/person')) {
+                // person
+                if (rtrim($pathinfo, '/') === '/backend/person') {
+                    if (substr($pathinfo, -1) !== '/') {
+                        return $this->redirect($pathinfo.'/', 'person');
+                    }
+
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::indexAction',  '_route' => 'person',);
+                }
+
+                // person_show
+                if (preg_match('#^/backend/person/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'person_show')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::showAction',));
+                }
+
+                // person_new
+                if ($pathinfo === '/backend/person/new') {
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::newAction',  '_route' => 'person_new',);
+                }
+
+                // person_create
+                if ($pathinfo === '/backend/person/create') {
+                    if ($this->context->getMethod() != 'POST') {
+                        $allow[] = 'POST';
+                        goto not_person_create;
+                    }
+
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::createAction',  '_route' => 'person_create',);
+                }
+                not_person_create:
+
+                // person_edit
+                if (preg_match('#^/backend/person/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'person_edit')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::editAction',));
+                }
+
+                // person_update
+                if (preg_match('#^/backend/person/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                        $allow = array_merge($allow, array('POST', 'PUT'));
+                        goto not_person_update;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'person_update')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::updateAction',));
+                }
+                not_person_update:
+
+                // person_delete
+                if (preg_match('#^/backend/person/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                        $allow = array_merge($allow, array('POST', 'DELETE'));
+                        goto not_person_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'person_delete')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::deleteAction',));
+                }
+                not_person_delete:
+
+            }
+
+            if (0 === strpos($pathinfo, '/backend/log')) {
+                // login
+                if ($pathinfo === '/backend/login') {
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\AuthenticationController::loginAction',  '_route' => 'login',);
+                }
+
+                // logout
+                if ($pathinfo === '/backend/logout') {
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\AuthenticationController::logoutAction',  '_route' => 'logout',);
+                }
+
+            }
+
+            // index
+            if (rtrim($pathinfo, '/') === '/backend') {
                 if (substr($pathinfo, -1) !== '/') {
-                    return $this->redirect($pathinfo.'/', 'person');
+                    return $this->redirect($pathinfo.'/', 'index');
                 }
 
-                return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::indexAction',  '_route' => 'person',);
+                return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\NavigationController::indexAction',  '_route' => 'index',);
             }
-
-            // person_show
-            if (preg_match('#^/backend/person/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'person_show')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::showAction',));
-            }
-
-            // person_new
-            if ($pathinfo === '/backend/person/new') {
-                return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::newAction',  '_route' => 'person_new',);
-            }
-
-            // person_create
-            if ($pathinfo === '/backend/person/create') {
-                if ($this->context->getMethod() != 'POST') {
-                    $allow[] = 'POST';
-                    goto not_person_create;
-                }
-
-                return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::createAction',  '_route' => 'person_create',);
-            }
-            not_person_create:
-
-            // person_edit
-            if (preg_match('#^/backend/person/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'person_edit')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::editAction',));
-            }
-
-            // person_update
-            if (preg_match('#^/backend/person/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
-                    $allow = array_merge($allow, array('POST', 'PUT'));
-                    goto not_person_update;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'person_update')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::updateAction',));
-            }
-            not_person_update:
-
-            // person_delete
-            if (preg_match('#^/backend/person/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
-                if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
-                    $allow = array_merge($allow, array('POST', 'DELETE'));
-                    goto not_person_delete;
-                }
-
-                return $this->mergeDefaults(array_replace($matches, array('_route' => 'person_delete')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::deleteAction',));
-            }
-            not_person_delete:
 
         }
 

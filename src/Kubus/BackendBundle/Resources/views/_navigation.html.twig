@@ -1,0 +1,103 @@
+<nav class="navbar navbar-inverse navbar-static" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">KuBuS</a>
+  </div>
+  <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+    <ul class="nav navbar-nav">
+      {% if person is defined %}
+      <li class="dropdown">
+        <!-- if controller-check faild, don't generate menu-->
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Personen <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <!-- if Controller-check was ok, check every possible Action -->
+          {% if person is defined %}
+            <li><a href="{{ path('user_index') }}">Alle Personen <span class="badge">137</span></a> </li>
+          {% endif %}
+          {% if person is defined %}
+            <li><a href="{{ path('user_create') }}">Neue Person</a> </li>
+          {% endif %}
+        </ul>
+      </li>
+      {% endif %}
+      {% if person is defined %}
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-star"></span> Kurse <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Alle Kurse <span class="badge">32</span></a> </li>
+          <li><a href="#">Neuer Kurs</a> </li>
+        </ul>
+      </li>
+      {% endif %}
+      {% if person is defined %}
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-bookmark"></span> Anmeldungen <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Aktuelle Anmeldungen <span class="badge">200</span></a> </li>
+          <li><a href="#">Vergangene Anmeldungen</a> </li>
+        </ul>
+      </li>
+      {% endif %}
+      {% if person is defined %}
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-envelope"></span> Email<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Email schreiben</a> </li>
+          <li><a href="#">Alle Emailtext</a> </li>
+        </ul>
+      </li>
+      {% endif %}
+      {% if person is defined %}
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-stats"></span> Statistik<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Personen</a> </li>
+          <li><a href="#">Kurse</a> </li>
+        </ul>
+      </li>
+      {% endif %}
+      {% if person is defined %}
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cog"></span> Einstellungen <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Promotionsprogramme <span class="badge">18</span></a></li>
+          <li><a href="#">Status</a> </li>
+          <li><a href="#">Texte und Sprachen</a> </li>
+          <li><a href="#">Rollen und Rechte</a> </li>
+        </ul>
+      </li>
+      {% endif %}
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+      {% if person is defined %}
+        <img src="{{ asset('bundles/hubackend/images/person.pic') }}" alt="avatar" style='max-height: 33px' class="pull-left navbar-btn">
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ person.name }}<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="{{ path('user_edit', {'id': person.id}) }}">Meine Daten</a> </li>
+            <li><a href="{{ path('user_edit', {'id': person.id}) }}">Meine Anmeldungen (Nutzer)</a> </li>
+            <li><a href="{{ path('user_edit', {'id': person.id}) }}">Meine Kurse (Trainer)</a> </li>
+            <li><a href="{{ path('permission_logout') }}">Log out</a> </li>
+          </ul>
+        </li>
+      {% else %}
+        <form class="form-inline" role="form" action="{{ path('login') }}" method="post">
+          <div class="form-group">
+            <label class="sr-only" for="loginEmail">Email address</label>
+            <input type="email" name="email" class="form-control" id="loginEmail" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="loginPassword">Password</label>
+            <input type="password" name="password" class="form-control" id="loginPassword" placeholder="Password">
+          </div>
+          <button type="submit" class="btn navbar-btn btn-default">Login</button>
+        </form>
+      {% endif %}      
+    </ul>
+  </div>
+</nav>
