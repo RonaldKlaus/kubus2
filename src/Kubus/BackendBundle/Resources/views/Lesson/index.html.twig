@@ -1,0 +1,69 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Lesson list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Courseid</th>
+                <th>Stateid</th>
+                <th>Beginat</th>
+                <th>Endat</th>
+                <th>Numberparticipantmin</th>
+                <th>Participantsminnumber</th>
+                <th>Participantsmaxnumber</th>
+                <th>Childcare</th>
+                <th>Publishat</th>
+                <th>Description</th>
+                <th>Charge</th>
+                <th>Externurl</th>
+                <th>Graduationyear</th>
+                <th>Createdat</th>
+                <th>Updatedat</th>
+                <th>Id</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('lesson_show', { 'id': entity.id }) }}">{{ entity.courseId }}</a></td>
+                <td>{{ entity.stateId }}</td>
+                <td>{% if entity.beginAt %}{{ entity.beginAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.endAt %}{{ entity.endAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.numberParticipantMin }}</td>
+                <td>{{ entity.participantsMinNumber }}</td>
+                <td>{{ entity.participantsMaxNumber }}</td>
+                <td>{{ entity.childCare }}</td>
+                <td>{% if entity.publishAt %}{{ entity.publishAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.description }}</td>
+                <td>{{ entity.charge }}</td>
+                <td>{{ entity.externUrl }}</td>
+                <td>{{ entity.graduationYear }}</td>
+                <td>{% if entity.createdAt %}{{ entity.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.updatedAt %}{{ entity.updatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.id }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('lesson_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('lesson_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('lesson_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

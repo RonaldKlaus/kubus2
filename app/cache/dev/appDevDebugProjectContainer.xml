@@ -2280,6 +2280,7 @@
         <service class="Doctrine\ORM\Configuration" public="false">
           <call method="setEntityNamespaces">
             <argument type="collection">
+              <argument key="KubusFrontendBundle">Kubus\FrontendBundle\Entity</argument>
               <argument key="KubusBackendBundle">Kubus\BackendBundle\Entity</argument>
             </argument>
           </call>
@@ -2318,8 +2319,21 @@
                     <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
                       <argument type="service" id="annotation_reader"/>
                       <argument type="collection">
-                        <argument>/Users/ronald/Projects/PHP/kubus/src/Kubus/BackendBundle/Entity</argument>
+                        <argument>/Users/ronald/Projects/PHP/kubus/src/Kubus/FrontendBundle/Entity</argument>
                       </argument>
+                    </service>
+                  </argument>
+                  <argument>Kubus\FrontendBundle\Entity</argument>
+                </call>
+                <call method="addDriver">
+                  <argument type="service">
+                    <service class="Doctrine\ORM\Mapping\Driver\SimplifiedXmlDriver" public="false">
+                      <argument type="collection">
+                        <argument key="/Users/ronald/Projects/PHP/kubus/src/Kubus/BackendBundle/Resources/config/doctrine">Kubus\BackendBundle\Entity</argument>
+                      </argument>
+                      <call method="setGlobalBasename">
+                        <argument>mapping</argument>
+                      </call>
                     </service>
                   </argument>
                   <argument>Kubus\BackendBundle\Entity</argument>

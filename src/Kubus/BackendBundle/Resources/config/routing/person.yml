@@ -1,5 +1,5 @@
 person:
-    pattern:  /
+    pattern: /
     defaults: { _controller: "KubusBackendBundle:Person:index" }
 
 person_show:

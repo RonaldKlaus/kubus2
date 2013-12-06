@@ -194,6 +194,66 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
             }
 
+            if (0 === strpos($pathinfo, '/backend/course')) {
+                // course
+                if (rtrim($pathinfo, '/') === '/backend/course') {
+                    if (substr($pathinfo, -1) !== '/') {
+                        return $this->redirect($pathinfo.'/', 'course');
+                    }
+
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\CourseController::indexAction',  '_route' => 'course',);
+                }
+
+                // course_show
+                if (preg_match('#^/backend/course/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'course_show')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\CourseController::showAction',));
+                }
+
+                // course_new
+                if ($pathinfo === '/backend/course/new') {
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\CourseController::newAction',  '_route' => 'course_new',);
+                }
+
+                // course_create
+                if ($pathinfo === '/backend/course/create') {
+                    if ($this->context->getMethod() != 'POST') {
+                        $allow[] = 'POST';
+                        goto not_course_create;
+                    }
+
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\CourseController::createAction',  '_route' => 'course_create',);
+                }
+                not_course_create:
+
+                // course_edit
+                if (preg_match('#^/backend/course/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'course_edit')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\CourseController::editAction',));
+                }
+
+                // course_update
+                if (preg_match('#^/backend/course/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                        $allow = array_merge($allow, array('POST', 'PUT'));
+                        goto not_course_update;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'course_update')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\CourseController::updateAction',));
+                }
+                not_course_update:
+
+                // course_delete
+                if (preg_match('#^/backend/course/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                        $allow = array_merge($allow, array('POST', 'DELETE'));
+                        goto not_course_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'course_delete')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\CourseController::deleteAction',));
+                }
+                not_course_delete:
+
+            }
+
             if (0 === strpos($pathinfo, '/backend/log')) {
                 // login
                 if ($pathinfo === '/backend/login') {

@@ -532,5 +532,3 @@ class Person
         return $this->password;
     }
 }
-
-
