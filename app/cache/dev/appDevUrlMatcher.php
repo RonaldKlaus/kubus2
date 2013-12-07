@@ -134,6 +134,66 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         if (0 === strpos($pathinfo, '/backend')) {
+            if (0 === strpos($pathinfo, '/backend/lesson')) {
+                // lesson
+                if (rtrim($pathinfo, '/') === '/backend/lesson') {
+                    if (substr($pathinfo, -1) !== '/') {
+                        return $this->redirect($pathinfo.'/', 'lesson');
+                    }
+
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\LessonController::indexAction',  '_route' => 'lesson',);
+                }
+
+                // lesson_show
+                if (preg_match('#^/backend/lesson/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'lesson_show')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\LessonController::showAction',));
+                }
+
+                // lesson_new
+                if ($pathinfo === '/backend/lesson/new') {
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\LessonController::newAction',  '_route' => 'lesson_new',);
+                }
+
+                // lesson_create
+                if ($pathinfo === '/backend/lesson/create') {
+                    if ($this->context->getMethod() != 'POST') {
+                        $allow[] = 'POST';
+                        goto not_lesson_create;
+                    }
+
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\LessonController::createAction',  '_route' => 'lesson_create',);
+                }
+                not_lesson_create:
+
+                // lesson_edit
+                if (preg_match('#^/backend/lesson/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'lesson_edit')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\LessonController::editAction',));
+                }
+
+                // lesson_update
+                if (preg_match('#^/backend/lesson/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                        $allow = array_merge($allow, array('POST', 'PUT'));
+                        goto not_lesson_update;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'lesson_update')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\LessonController::updateAction',));
+                }
+                not_lesson_update:
+
+                // lesson_delete
+                if (preg_match('#^/backend/lesson/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                        $allow = array_merge($allow, array('POST', 'DELETE'));
+                        goto not_lesson_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'lesson_delete')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\LessonController::deleteAction',));
+                }
+                not_lesson_delete:
+
+            }
+
             if (0 === strpos($pathinfo, '/backend/person')) {
                 // person
                 if (rtrim($pathinfo, '/') === '/backend/person') {
@@ -191,6 +251,66 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
                     return $this->mergeDefaults(array_replace($matches, array('_route' => 'person_delete')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\PersonController::deleteAction',));
                 }
                 not_person_delete:
+
+            }
+
+            if (0 === strpos($pathinfo, '/backend/teacher')) {
+                // teacher
+                if (rtrim($pathinfo, '/') === '/backend/teacher') {
+                    if (substr($pathinfo, -1) !== '/') {
+                        return $this->redirect($pathinfo.'/', 'teacher');
+                    }
+
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\TeacherController::indexAction',  '_route' => 'teacher',);
+                }
+
+                // teacher_show
+                if (preg_match('#^/backend/teacher/(?P<id>[^/]++)/show$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'teacher_show')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\TeacherController::showAction',));
+                }
+
+                // teacher_new
+                if ($pathinfo === '/backend/teacher/new') {
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\TeacherController::newAction',  '_route' => 'teacher_new',);
+                }
+
+                // teacher_create
+                if ($pathinfo === '/backend/teacher/create') {
+                    if ($this->context->getMethod() != 'POST') {
+                        $allow[] = 'POST';
+                        goto not_teacher_create;
+                    }
+
+                    return array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\TeacherController::createAction',  '_route' => 'teacher_create',);
+                }
+                not_teacher_create:
+
+                // teacher_edit
+                if (preg_match('#^/backend/teacher/(?P<id>[^/]++)/edit$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'teacher_edit')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\TeacherController::editAction',));
+                }
+
+                // teacher_update
+                if (preg_match('#^/backend/teacher/(?P<id>[^/]++)/update$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'PUT'))) {
+                        $allow = array_merge($allow, array('POST', 'PUT'));
+                        goto not_teacher_update;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'teacher_update')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\TeacherController::updateAction',));
+                }
+                not_teacher_update:
+
+                // teacher_delete
+                if (preg_match('#^/backend/teacher/(?P<id>[^/]++)/delete$#s', $pathinfo, $matches)) {
+                    if (!in_array($this->context->getMethod(), array('POST', 'DELETE'))) {
+                        $allow = array_merge($allow, array('POST', 'DELETE'));
+                        goto not_teacher_delete;
+                    }
+
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'teacher_delete')), array (  '_controller' => 'Kubus\\BackendBundle\\Controller\\TeacherController::deleteAction',));
+                }
+                not_teacher_delete:
 
             }
 

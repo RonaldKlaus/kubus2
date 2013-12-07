@@ -4,16 +4,13 @@ namespace Kubus\BackendBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+
 use Kubus\BackendBundle\Entity\Teacher;
 use Kubus\BackendBundle\Form\TeacherType;
 
 /**
  * Teacher controller.
  *
- * @Route("/teacher")
  */
 class TeacherController extends Controller
 {
@@ -21,9 +18,6 @@ class TeacherController extends Controller
     /**
      * Lists all Teacher entities.
      *
-     * @Route("/", name="teacher")
-     * @Method("GET")
-     * @Template()
      */
     public function indexAction()
     {
@@ -31,16 +25,13 @@ class TeacherController extends Controller
 
         $entities = $em->getRepository('KubusBackendBundle:Teacher')->findAll();
 
-        return array(
+        return $this->render('KubusBackendBundle:Teacher:index.html.twig', array(
             'entities' => $entities,
-        );
+        ));
     }
     /**
      * Creates a new Teacher entity.
      *
-     * @Route("/", name="teacher_create")
-     * @Method("POST")
-     * @Template("KubusBackendBundle:Teacher:new.html.twig")
      */
     public function createAction(Request $request)
     {
@@ -56,10 +47,10 @@ class TeacherController extends Controller
             return $this->redirect($this->generateUrl('teacher_show', array('id' => $entity->getId())));
         }
 
-        return array(
+        return $this->render('KubusBackendBundle:Teacher:new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
-        );
+        ));
     }
 
     /**
@@ -84,27 +75,21 @@ class TeacherController extends Controller
     /**
      * Displays a form to create a new Teacher entity.
      *
-     * @Route("/new", name="teacher_new")
-     * @Method("GET")
-     * @Template()
      */
     public function newAction()
     {
         $entity = new Teacher();
         $form   = $this->createCreateForm($entity);
 
-        return array(
+        return $this->render('KubusBackendBundle:Teacher:new.html.twig', array(
             'entity' => $entity,
             'form'   => $form->createView(),
-        );
+        ));
     }
 
     /**
      * Finds and displays a Teacher entity.
      *
-     * @Route("/{id}", name="teacher_show")
-     * @Method("GET")
-     * @Template()
      */
     public function showAction($id)
     {
@@ -118,18 +103,14 @@ class TeacherController extends Controller
 
         $deleteForm = $this->createDeleteForm($id);
 
-        return array(
+        return $this->render('KubusBackendBundle:Teacher:show.html.twig', array(
             'entity'      => $entity,
-            'delete_form' => $deleteForm->createView(),
-        );
+            'delete_form' => $deleteForm->createView(),        ));
     }
 
     /**
      * Displays a form to edit an existing Teacher entity.
      *
-     * @Route("/{id}/edit", name="teacher_edit")
-     * @Method("GET")
-     * @Template()
      */
     public function editAction($id)
     {
@@ -144,11 +125,11 @@ class TeacherController extends Controller
         $editForm = $this->createEditForm($entity);
         $deleteForm = $this->createDeleteForm($id);
 
-        return array(
+        return $this->render('KubusBackendBundle:Teacher:edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
-        );
+        ));
     }
 
     /**
@@ -172,9 +153,6 @@ class TeacherController extends Controller
     /**
      * Edits an existing Teacher entity.
      *
-     * @Route("/{id}", name="teacher_update")
-     * @Method("PUT")
-     * @Template("KubusBackendBundle:Teacher:edit.html.twig")
      */
     public function updateAction(Request $request, $id)
     {
@@ -196,17 +174,15 @@ class TeacherController extends Controller
             return $this->redirect($this->generateUrl('teacher_edit', array('id' => $id)));
         }
 
-        return array(
+        return $this->render('KubusBackendBundle:Teacher:edit.html.twig', array(
             'entity'      => $entity,
             'edit_form'   => $editForm->createView(),
             'delete_form' => $deleteForm->createView(),
-        );
+        ));
     }
     /**
      * Deletes a Teacher entity.
      *
-     * @Route("/{id}", name="teacher_delete")
-     * @Method("DELETE")
      */
     public function deleteAction(Request $request, $id)
     {
