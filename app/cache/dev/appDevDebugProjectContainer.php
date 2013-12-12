@@ -3429,7 +3429,7 @@ class appDevDebugProjectContainer extends Container
             'kernel.root_dir' => '/Users/ronald/Projects/PHP/kubus/app',
             'kernel.environment' => 'dev',
             'kernel.debug' => true,
-            'kernel.name' => 'app',
+            'kernel.name' => 'ap_',
             'kernel.cache_dir' => '/Users/ronald/Projects/PHP/kubus/app/cache/dev',
             'kernel.logs_dir' => '/Users/ronald/Projects/PHP/kubus/app/logs',
             'kernel.bundles' => array(
@@ -3842,7 +3842,7 @@ class appDevDebugProjectContainer extends Container
             ),
             'assetic.java.bin' => '/usr/bin/java',
             'assetic.node.bin' => '/usr/bin/node',
-            'assetic.ruby.bin' => '/Applications/mappstack-5.4.22-0/ruby/bin/ruby',
+            'assetic.ruby.bin' => '/usr/bin/ruby',
             'assetic.sass.bin' => '/usr/bin/sass',
             'assetic.filter.cssrewrite.class' => 'Assetic\\Filter\\CssRewriteFilter',
             'assetic.twig_extension.functions' => array(

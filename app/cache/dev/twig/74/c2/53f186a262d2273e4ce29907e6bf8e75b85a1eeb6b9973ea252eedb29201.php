@@ -7,16 +7,16 @@ class __TwigTemplate_74c253f186a262d2273e4ce29907e6bf8e75b85a1eeb6b9973ea252eedb
     {
         parent::__construct($env);
 
-        $this->parent = $this->env->loadTemplate("::base.html.twig");
+        $this->parent = $this->env->loadTemplate("KubusBackendBundle::layout.html.twig");
 
         $this->blocks = array(
-            'body' => array($this, 'block_body'),
+            'content' => array($this, 'block_content'),
         );
     }
 
     protected function doGetParent(array $context)
     {
-        return "::base.html.twig";
+        return "KubusBackendBundle::layout.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -25,7 +25,7 @@ class __TwigTemplate_74c253f186a262d2273e4ce29907e6bf8e75b85a1eeb6b9973ea252eedb
     }
 
     // line 3
-    public function block_body($context, array $blocks = array())
+    public function block_content($context, array $blocks = array())
     {
         // line 4
         echo "<h1>Teacher edit</h1>
