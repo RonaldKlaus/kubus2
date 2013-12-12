@@ -1,3 +1,7 @@
+KubusBackendBundle_program:
+  resource: "@KubusBackendBundle/Resources/config/routing/program.yml"
+  prefix:   /program
+
 KubusBackendBundle_lesson:
   resource: "@KubusBackendBundle/Resources/config/routing/lesson.yml"
   prefix:   /lesson
