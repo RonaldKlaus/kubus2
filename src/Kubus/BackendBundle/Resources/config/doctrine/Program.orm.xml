@@ -8,5 +8,7 @@
     <field name="description" type="string" column="description" length="255"/>
     <field name="email" type="string" column="email" length="255"/>
     <field name="domainId" type="integer" column="domain_id"/>
+    <field name="createdAt" type="datetime" column="created_at"/>
+    <field name="updatedAt" type="datetime" column="updated_at"/>
   </entity>
 </doctrine-mapping>

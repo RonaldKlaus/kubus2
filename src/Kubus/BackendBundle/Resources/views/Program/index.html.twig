@@ -10,6 +10,8 @@
                 <th>Description</th>
                 <th>Email</th>
                 <th>Domainid</th>
+                <th>Createdat</th>
+                <th>Updatedat</th>
                 <th>Id</th>
                 <th>Actions</th>
             </tr>
@@ -21,6 +23,8 @@
                 <td>{{ entity.description }}</td>
                 <td>{{ entity.email }}</td>
                 <td>{{ entity.domainId }}</td>
+                <td>{% if entity.createdAt %}{{ entity.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.updatedAt %}{{ entity.updatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{{ entity.id }}</td>
                 <td>
                 <ul>

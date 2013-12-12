@@ -15958,3 +15958,1339 @@ LINE 1: ...AS created_at4, t0.updated_at AS updated_at5 FROM DoctoralPr...
 [2013-12-12 08:39:20] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
 [2013-12-12 08:39:20] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
 [2013-12-12 08:39:20] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2013-12-12 13:23:59] request.INFO: Matched route "program_new" (parameters: "_controller": "Kubus\BackendBundle\Controller\ProgramController::newAction", "_route": "program_new") [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2013-12-12 13:23:59] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2013-12-12 13:24:00] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse". [] []
+[2013-12-12 13:24:00] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\ChromePhpHandler::onKernelResponse". [] []
+[2013-12-12 13:24:00] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:00] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:00] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse". [] []
+[2013-12-12 13:24:00] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2013-12-12 13:24:00] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2013-12-12 13:24:00] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:00] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2013-12-12 13:24:01] request.INFO: Matched route "_wdt" (parameters: "_controller": "web_profiler.controller.profiler:toolbarAction", "token": "cc0022", "_route": "_wdt") [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\ChromePhpHandler::onKernelResponse". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:01] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2013-12-12 13:24:26] request.INFO: Matched route "program_create" (parameters: "_controller": "Kubus\BackendBundle\Controller\ProgramController::createAction", "_route": "program_create") [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2013-12-12 13:24:26] doctrine.DEBUG: SELECT NEXTVAL('Program_id_seq') [] []
+[2013-12-12 13:24:26] doctrine.DEBUG: "START TRANSACTION" [] []
+[2013-12-12 13:24:26] doctrine.DEBUG: INSERT INTO Program (title, description, email, domain_id, id) VALUES (?, ?, ?, ?, ?) {"1":"ZIBI","2":"The is the ZIBI Program.","3":"bla@bla.de","4":1,"5":1} []
+[2013-12-12 13:24:26] doctrine.DEBUG: "COMMIT" [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\ChromePhpHandler::onKernelResponse". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2013-12-12 13:24:26] request.INFO: Matched route "program_show" (parameters: "_controller": "Kubus\BackendBundle\Controller\ProgramController::showAction", "id": "1", "_route": "program_show") [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2013-12-12 13:24:26] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2013-12-12 13:24:26] doctrine.DEBUG: SELECT t0.title AS title1, t0.description AS description2, t0.email AS email3, t0.domain_id AS domain_id4, t0.id AS id5 FROM Program t0 WHERE t0.id = ? ["1"] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\ChromePhpHandler::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2013-12-12 13:24:27] request.INFO: Matched route "_wdt" (parameters: "_controller": "web_profiler.controller.profiler:toolbarAction", "token": "4b0fdf", "_route": "_wdt") [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\ChromePhpHandler::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:27] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2013-12-12 13:24:30] request.INFO: Matched route "program" (parameters: "_controller": "Kubus\BackendBundle\Controller\ProgramController::indexAction", "_route": "program") [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2013-12-12 13:24:30] doctrine.DEBUG: SELECT t0.title AS title1, t0.description AS description2, t0.email AS email3, t0.domain_id AS domain_id4, t0.id AS id5 FROM Program t0 [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\ChromePhpHandler::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2013-12-12 13:24:30] request.INFO: Matched route "_wdt" (parameters: "_controller": "web_profiler.controller.profiler:toolbarAction", "token": "012e26", "_route": "_wdt") [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\ChromePhpHandler::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2013-12-12 13:24:30] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] request.INFO: Matched route "_profiler" (parameters: "_controller": "web_profiler.controller.profiler:panelAction", "token": "012e26", "_route": "_profiler") [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] request.INFO: Matched route "_wdt" (parameters: "_controller": "web_profiler.controller.profiler:toolbarAction", "token": "012e26", "_route": "_wdt") [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\ChromePhpHandler::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\FrameworkBundle\EventListener\SessionListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\FragmentListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\RouterListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] request.INFO: Matched route "_profiler_search_bar" (parameters: "_controller": "web_profiler.controller.profiler:searchBarAction", "_route": "_profiler_search_bar") [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\LocaleListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\Security\Http\Firewall::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Bundle\AsseticBundle\EventListener\RequestListener::onKernelRequest". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.request" to listener "Symfony\Component\HttpKernel\EventListener\ErrorsLoggerListener::injectLogger". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Bundle\FrameworkBundle\DataCollector\RouterDataCollector::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Symfony\Component\HttpKernel\DataCollector\RequestDataCollector::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ControllerListener::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\ParamConverterListener::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.controller" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\TemplateListener::onKernelController". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\ChromePhpHandler::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\FirePHPHandler::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bridge\Monolog\Handler\ChromePhpHandler::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\Security\Http\RememberMe\ResponseListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Sensio\Bundle\FrameworkExtraBundle\EventListener\CacheListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\ProfilerListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Bundle\WebProfilerBundle\EventListener\WebDebugToolbarListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.response" to listener "Symfony\Component\HttpKernel\EventListener\StreamedResponseListener::onKernelResponse". [] []
+[2013-12-12 13:25:21] event.DEBUG: Notified event "kernel.terminate" to listener "Symfony\Bundle\SwiftmailerBundle\EventListener\EmailSenderListener::onKernelTerminate". [] []
+[2013-12-12 13:42:00] doctrine.DEBUG: SELECT
+                    c.relname, n.nspname AS schemaname
+                FROM
+                   pg_class c, pg_namespace n
+                WHERE relkind = 'S' AND n.oid = c.relnamespace AND
+                    (n.nspname NOT LIKE 'pg_%' AND n.nspname != 'information_schema') [] []
+[2013-12-12 13:42:00] doctrine.DEBUG: SELECT min_value, increment_by FROM lesson_id_seq [] []
+[2013-12-12 13:42:00] doctrine.DEBUG: SELECT min_value, increment_by FROM person_id_seq [] []
+[2013-12-12 13:42:00] doctrine.DEBUG: SELECT min_value, increment_by FROM teacher_id_seq [] []
+[2013-12-12 13:42:00] doctrine.DEBUG: SELECT min_value, increment_by FROM course_id_seq [] []
+[2013-12-12 13:42:00] doctrine.DEBUG: SELECT min_value, increment_by FROM program_id_seq [] []
+[2013-12-12 13:42:00] doctrine.DEBUG: SELECT tablename AS table_name, schemaname AS schema_name
+                FROM pg_tables WHERE schemaname NOT LIKE 'pg_%' AND schemaname != 'information_schema' AND tablename != 'geometry_columns' AND tablename != 'spatial_ref_sys' [] []
+[2013-12-12 13:42:00] doctrine.DEBUG: SELECT nspname as schema_name FROM pg_namespace WHERE nspname !~ '^pg_.*' and nspname != 'information_schema' [] []
+[2013-12-12 13:42:00] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:00] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'course' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'course' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'course' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16566 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'lesson' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'lesson' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'lesson' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16574 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'person' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'person' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'person' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16582 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'teacher' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'teacher' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'teacher' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16599 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'program' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'program' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'program' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16610 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT
+                    c.relname, n.nspname AS schemaname
+                FROM
+                   pg_class c, pg_namespace n
+                WHERE relkind = 'S' AND n.oid = c.relnamespace AND
+                    (n.nspname NOT LIKE 'pg_%' AND n.nspname != 'information_schema') [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT min_value, increment_by FROM lesson_id_seq [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT min_value, increment_by FROM person_id_seq [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT min_value, increment_by FROM teacher_id_seq [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT min_value, increment_by FROM course_id_seq [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT min_value, increment_by FROM program_id_seq [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT tablename AS table_name, schemaname AS schema_name
+                FROM pg_tables WHERE schemaname NOT LIKE 'pg_%' AND schemaname != 'information_schema' AND tablename != 'geometry_columns' AND tablename != 'spatial_ref_sys' [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'course' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'course' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'course' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16566 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'lesson' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'lesson' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'lesson' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16574 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'person' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'person' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'person' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16582 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'teacher' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'teacher' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'teacher' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16599 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'program' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'program' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'program' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16610 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:01] doctrine.DEBUG: ALTER TABLE program ADD created_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT
+                    c.relname, n.nspname AS schemaname
+                FROM
+                   pg_class c, pg_namespace n
+                WHERE relkind = 'S' AND n.oid = c.relnamespace AND
+                    (n.nspname NOT LIKE 'pg_%' AND n.nspname != 'information_schema') [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT min_value, increment_by FROM lesson_id_seq [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT min_value, increment_by FROM person_id_seq [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT min_value, increment_by FROM teacher_id_seq [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT min_value, increment_by FROM course_id_seq [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT min_value, increment_by FROM program_id_seq [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT tablename AS table_name, schemaname AS schema_name
+                FROM pg_tables WHERE schemaname NOT LIKE 'pg_%' AND schemaname != 'information_schema' AND tablename != 'geometry_columns' AND tablename != 'spatial_ref_sys' [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT nspname as schema_name FROM pg_namespace WHERE nspname !~ '^pg_.*' and nspname != 'information_schema' [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'course' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'course' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'course' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16566 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'lesson' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'lesson' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'lesson' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16574 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'person' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'person' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'person' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16582 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'teacher' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'teacher' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'teacher' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16599 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'program' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'program' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'program' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16610 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:41] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT
+                    c.relname, n.nspname AS schemaname
+                FROM
+                   pg_class c, pg_namespace n
+                WHERE relkind = 'S' AND n.oid = c.relnamespace AND
+                    (n.nspname NOT LIKE 'pg_%' AND n.nspname != 'information_schema') [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT min_value, increment_by FROM lesson_id_seq [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT min_value, increment_by FROM person_id_seq [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT min_value, increment_by FROM teacher_id_seq [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT min_value, increment_by FROM course_id_seq [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT min_value, increment_by FROM program_id_seq [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT tablename AS table_name, schemaname AS schema_name
+                FROM pg_tables WHERE schemaname NOT LIKE 'pg_%' AND schemaname != 'information_schema' AND tablename != 'geometry_columns' AND tablename != 'spatial_ref_sys' [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT nspname as schema_name FROM pg_namespace WHERE nspname !~ '^pg_.*' and nspname != 'information_schema' [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'course' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'course' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'course' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16566 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'lesson' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'lesson' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'lesson' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16574 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'person' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'person' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'person' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16582 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'teacher' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'teacher' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'teacher' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16599 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT
+                    a.attnum,
+                    a.attname AS field,
+                    t.typname AS type,
+                    format_type(a.atttypid, a.atttypmod) AS complete_type,
+                    (SELECT t1.typname FROM pg_catalog.pg_type t1 WHERE t1.oid = t.typbasetype) AS domain_type,
+                    (SELECT format_type(t2.typbasetype, t2.typtypmod) FROM
+                      pg_catalog.pg_type t2 WHERE t2.typtype = 'd' AND t2.oid = a.atttypid) AS domain_complete_type,
+                    a.attnotnull AS isnotnull,
+                    (SELECT 't'
+                     FROM pg_index
+                     WHERE c.oid = pg_index.indrelid
+                        AND pg_index.indkey[0] = a.attnum
+                        AND pg_index.indisprimary = 't'
+                    ) AS pri,
+                    (SELECT pg_attrdef.adsrc
+                     FROM pg_attrdef
+                     WHERE c.oid = pg_attrdef.adrelid
+                        AND pg_attrdef.adnum=a.attnum
+                    ) AS default,
+                    (SELECT pg_description.description
+                        FROM pg_description WHERE pg_description.objoid = c.oid AND a.attnum = pg_description.objsubid
+                    ) AS comment
+                    FROM pg_attribute a, pg_class c, pg_type t, pg_namespace n
+                    WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'program' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),','))
+                        AND a.attnum > 0
+                        AND a.attrelid = c.oid
+                        AND a.atttypid = t.oid
+                        AND n.oid = c.relnamespace
+                    ORDER BY a.attnum [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT r.conname, pg_catalog.pg_get_constraintdef(r.oid, true) as condef
+                  FROM pg_catalog.pg_constraint r
+                  WHERE r.conrelid =
+                  (
+                      SELECT c.oid
+                      FROM pg_catalog.pg_class c, pg_catalog.pg_namespace n
+                      WHERE n.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND c.relname = 'program' AND n.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND n.oid = c.relnamespace
+                  )
+                  AND r.contype = 'f' [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT relname, pg_index.indisunique, pg_index.indisprimary,
+                       pg_index.indkey, pg_index.indrelid
+                 FROM pg_class, pg_index
+                 WHERE oid IN (
+                    SELECT indexrelid
+                    FROM pg_index si, pg_class sc, pg_namespace sn
+                    WHERE sn.nspname NOT IN ('pg_catalog', 'information_schema', 'pg_toast') AND sc.relname = 'program' AND sn.nspname = ANY(string_to_array((select replace(setting,'"$user"',user) from pg_catalog.pg_settings where name = 'search_path'),',')) AND sc.oid=si.indrelid AND sc.relnamespace = sn.oid
+                 ) AND pg_index.indexrelid = oid [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SELECT attnum, attname FROM pg_attribute
+                WHERE attrelid=16610 AND attnum IN (1 ) ORDER BY attnum ASC; [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP SEQUENCE Course_id_seq CASCADE [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP SEQUENCE Lesson_id_seq CASCADE [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP SEQUENCE person_id_seq CASCADE [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP SEQUENCE Program_id_seq CASCADE [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP SEQUENCE Teacher_id_seq CASCADE [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP SEQUENCE course_id_seq CASCADE [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP SEQUENCE lesson_id_seq CASCADE [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP SEQUENCE person_id_seq CASCADE [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP SEQUENCE program_id_seq CASCADE [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP SEQUENCE teacher_id_seq CASCADE [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP TABLE course [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP TABLE lesson [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP TABLE person [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP TABLE teacher [] []
+[2013-12-12 13:42:48] doctrine.DEBUG: DROP TABLE program [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: SELECT
+                    c.relname, n.nspname AS schemaname
+                FROM
+                   pg_class c, pg_namespace n
+                WHERE relkind = 'S' AND n.oid = c.relnamespace AND
+                    (n.nspname NOT LIKE 'pg_%' AND n.nspname != 'information_schema') [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: SELECT tablename AS table_name, schemaname AS schema_name
+                FROM pg_tables WHERE schemaname NOT LIKE 'pg_%' AND schemaname != 'information_schema' AND tablename != 'geometry_columns' AND tablename != 'spatial_ref_sys' [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: SELECT
+                    c.relname, n.nspname AS schemaname
+                FROM
+                   pg_class c, pg_namespace n
+                WHERE relkind = 'S' AND n.oid = c.relnamespace AND
+                    (n.nspname NOT LIKE 'pg_%' AND n.nspname != 'information_schema') [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: SELECT tablename AS table_name, schemaname AS schema_name
+                FROM pg_tables WHERE schemaname NOT LIKE 'pg_%' AND schemaname != 'information_schema' AND tablename != 'geometry_columns' AND tablename != 'spatial_ref_sys' [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: SHOW search_path [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: CREATE SEQUENCE Course_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: CREATE SEQUENCE Lesson_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: CREATE SEQUENCE person_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: CREATE SEQUENCE Program_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: CREATE SEQUENCE Teacher_id_seq INCREMENT BY 1 MINVALUE 1 START 1 [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: CREATE TABLE Course (id INT NOT NULL, number VARCHAR(255) NOT NULL, title VARCHAR(255) NOT NULL, doctoral_program_id INT NOT NULL, comment VARCHAR(255) NOT NULL, created_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, updated_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, PRIMARY KEY(id)) [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: CREATE TABLE Lesson (id INT NOT NULL, course_id INT NOT NULL, state_id INT NOT NULL, begin_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, end_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, number_participant_min VARCHAR(255) NOT NULL, participants_min_number INT NOT NULL, participants_max_number INT NOT NULL, child_care BOOLEAN NOT NULL, publish_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, description TEXT NOT NULL, charge INT NOT NULL, extern_url VARCHAR(255) NOT NULL, graduation_year INT NOT NULL, created_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, updated_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, PRIMARY KEY(id)) [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: CREATE TABLE person (id INT NOT NULL, title VARCHAR(10) DEFAULT NULL, lastname VARCHAR(255) NOT NULL, firstname VARCHAR(255) NOT NULL, gender VARCHAR(1) NOT NULL, email VARCHAR(255) NOT NULL, telephone VARCHAR(255) DEFAULT NULL, mobile VARCHAR(255) DEFAULT NULL, street VARCHAR(255) DEFAULT NULL, postcode VARCHAR(255) DEFAULT NULL, city VARCHAR(255) DEFAULT NULL, country VARCHAR(255) DEFAULT NULL, photo_link VARCHAR(255) DEFAULT NULL, created_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, updated_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, deleted_at TIMESTAMP(0) WITHOUT TIME ZONE DEFAULT NULL, password VARCHAR(255) NOT NULL, PRIMARY KEY(id)) [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: CREATE TABLE Program (id INT NOT NULL, title VARCHAR(255) NOT NULL, description VARCHAR(255) NOT NULL, email VARCHAR(255) NOT NULL, domain_id INT NOT NULL, created_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, updated_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, PRIMARY KEY(id)) [] []
+[2013-12-12 13:42:51] doctrine.DEBUG: CREATE TABLE Teacher (id INT NOT NULL, person_id INT NOT NULL, tax_number VARCHAR(255) NOT NULL, finance_office VARCHAR(255) NOT NULL, account_number VARCHAR(255) NOT NULL, bank_code VARCHAR(255) NOT NULL, bank_name VARCHAR(255) NOT NULL, firm VARCHAR(255) NOT NULL, description TEXT NOT NULL, created_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, updated_at TIMESTAMP(0) WITHOUT TIME ZONE NOT NULL, PRIMARY KEY(id)) [] []
