@@ -27,7 +27,12 @@ class Course
     /**
      * @var integer
      */
-    private $doctoralProgramId;
+    private $programId;
+
+    /**
+     * @var integer
+     */
+    private $categoryId;
 
     /**
      * @var string
@@ -48,7 +53,7 @@ class Course
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -64,14 +69,14 @@ class Course
     public function setNumber($number)
     {
         $this->number = $number;
-    
+
         return $this;
     }
 
     /**
      * Get number
      *
-     * @return string 
+     * @return string
      */
     public function getNumber()
     {
@@ -87,14 +92,14 @@ class Course
     public function setTitle($title)
     {
         $this->title = $title;
-    
+
         return $this;
     }
 
     /**
      * Get title
      *
-     * @return string 
+     * @return string
      */
     public function getTitle()
     {
@@ -102,26 +107,49 @@ class Course
     }
 
     /**
-     * Set doctoralProgramId
+     * Set program
      *
-     * @param integer $doctoralProgramId
+     * @param integer $program
      * @return Course
      */
-    public function setDoctoralProgramId($doctoralProgramId)
+    public function setProgramId($programId)
     {
-        $this->doctoralProgramId = $doctoralProgramId;
-    
+        $this->programId = $programId;
+
         return $this;
     }
 
     /**
-     * Get doctoralProgramId
+     * Get programId
      *
-     * @return integer 
+     * @return integer
      */
-    public function getDoctoralProgramId()
+    public function getProgramId()
     {
-        return $this->doctoralProgramId;
+        return $this->programId;
+    }
+
+    /**
+     * Set categoryId
+     *
+     * @param integer $categoryId
+     * @return Course
+     */
+    public function setCategoryId($categoryId)
+    {
+        $this->categoryId = $categoryId;
+
+        return $this;
+    }
+
+    /**
+     * Get categoryId
+     *
+     * @return integer
+     */
+    public function getCategoryId()
+    {
+        return $this->categoryId;
     }
 
     /**
@@ -133,14 +161,14 @@ class Course
     public function setComment($comment)
     {
         $this->comment = $comment;
-    
+
         return $this;
     }
 
     /**
      * Get comment
      *
-     * @return string 
+     * @return string
      */
     public function getComment()
     {
@@ -156,14 +184,14 @@ class Course
     public function setCreatedAt($createdAt)
     {
         $this->createdAt = $createdAt;
-    
+
         return $this;
     }
 
     /**
      * Get createdAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getCreatedAt()
     {
@@ -179,14 +207,14 @@ class Course
     public function setUpdatedAt($updatedAt)
     {
         $this->updatedAt = $updatedAt;
-    
+
         return $this;
     }
 
     /**
      * Get updatedAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getUpdatedAt()
     {

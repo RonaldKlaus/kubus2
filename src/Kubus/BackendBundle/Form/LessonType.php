@@ -19,7 +19,6 @@ class LessonType extends AbstractType
             ->add('stateId')
             ->add('beginAt')
             ->add('endAt')
-            ->add('numberParticipantMin')
             ->add('participantsMinNumber')
             ->add('participantsMaxNumber')
             ->add('childCare')
@@ -27,12 +26,12 @@ class LessonType extends AbstractType
             ->add('description')
             ->add('charge')
             ->add('externUrl')
-            ->add('graduationYear')
+            ->add('graduationYears')
             ->add('createdAt')
             ->add('updatedAt')
         ;
     }
-    
+
     /**
      * @param OptionsResolverInterface $resolver
      */

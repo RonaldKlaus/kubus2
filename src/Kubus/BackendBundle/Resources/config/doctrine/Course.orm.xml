@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-  <entity repository-class="Kubus\BackendBundle\Entity\CourseRepository" name="Kubus\BackendBundle\Entity\Course">
+  <entity name="Kubus\BackendBundle\Entity\Course" table="course">
     <id name="id" type="integer" column="id">
-      <generator strategy="AUTO"/>
+      <generator strategy="SEQUENCE"/>
     </id>
-    <field name="number" type="string" column="number" length="255"/>
-    <field name="title" type="string" column="title" length="255"/>
-    <field name="doctoralProgramId" type="integer" column="doctoral_program_id"/>
-    <field name="comment" type="string" column="comment" length="255"/>
-    <field name="createdAt" type="datetime" column="created_at"/>
-    <field name="updatedAt" type="datetime" column="updated_at"/>
+    <field name="number" type="string" column="number" length="255" nullable="false"/>
+    <field name="title" type="string" column="title" length="255" nullable="false"/>
+    <field name="programId" type="integer" column="program_id" nullable="false"/>
+    <field name="comment" type="string" column="comment" length="255" nullable="false"/>
+    <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
+    <field name="updatedAt" type="datetime" column="updated_at" nullable="false"/>
+    <field name="categoryId" type="integer" column="category_id" nullable="false"/>
   </entity>
 </doctrine-mapping>

@@ -1,6 +1,6 @@
-{% extends 'KubusBackendBundle::layout.html.twig' %}
+{% extends '::base.html.twig' %}
 
-{% block content -%}
+{% block body -%}
     <h1>Lesson list</h1>
 
     <table class="records_list">
@@ -10,7 +10,6 @@
                 <th>Stateid</th>
                 <th>Beginat</th>
                 <th>Endat</th>
-                <th>Numberparticipantmin</th>
                 <th>Participantsminnumber</th>
                 <th>Participantsmaxnumber</th>
                 <th>Childcare</th>
@@ -18,7 +17,7 @@
                 <th>Description</th>
                 <th>Charge</th>
                 <th>Externurl</th>
-                <th>Graduationyear</th>
+                <th>Graduationyears</th>
                 <th>Createdat</th>
                 <th>Updatedat</th>
                 <th>Id</th>
@@ -32,7 +31,6 @@
                 <td>{{ entity.stateId }}</td>
                 <td>{% if entity.beginAt %}{{ entity.beginAt|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{% if entity.endAt %}{{ entity.endAt|date('Y-m-d H:i:s') }}{% endif %}</td>
-                <td>{{ entity.numberParticipantMin }}</td>
                 <td>{{ entity.participantsMinNumber }}</td>
                 <td>{{ entity.participantsMaxNumber }}</td>
                 <td>{{ entity.childCare }}</td>
@@ -40,7 +38,7 @@
                 <td>{{ entity.description }}</td>
                 <td>{{ entity.charge }}</td>
                 <td>{{ entity.externUrl }}</td>
-                <td>{{ entity.graduationYear }}</td>
+                <td>{{ entity.graduationYears }}</td>
                 <td>{% if entity.createdAt %}{{ entity.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{% if entity.updatedAt %}{{ entity.updatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{{ entity.id }}</td>

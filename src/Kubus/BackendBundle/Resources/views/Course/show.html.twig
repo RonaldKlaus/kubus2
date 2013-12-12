@@ -1,6 +1,6 @@
-{% extends 'KubusBackendBundle::layout.html.twig' %}
+{% extends '::base.html.twig' %}
 
-{% block content -%}
+{% block body -%}
     <h1>Course</h1>
 
     <table class="record_properties">
@@ -14,8 +14,8 @@
                 <td>{{ entity.title }}</td>
             </tr>
             <tr>
-                <th>Doctoralprogramid</th>
-                <td>{{ entity.doctoralProgramId }}</td>
+                <th>Programid</th>
+                <td>{{ entity.programId }}</td>
             </tr>
             <tr>
                 <th>Comment</th>
@@ -28,6 +28,10 @@
             <tr>
                 <th>Updatedat</th>
                 <td>{{ entity.updatedAt|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Categoryid</th>
+                <td>{{ entity.categoryId }}</td>
             </tr>
             <tr>
                 <th>Id</th>

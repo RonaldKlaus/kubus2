@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
-  <entity repository-class="Kubus\BackendBundle\Entity\LessonRepository" name="Kubus\BackendBundle\Entity\Lesson">
+  <entity name="Kubus\BackendBundle\Entity\Lesson" table="lesson">
     <id name="id" type="integer" column="id">
-      <generator strategy="AUTO"/>
+      <generator strategy="SEQUENCE"/>
     </id>
-    <field name="courseId" type="integer" column="course_id"/>
-    <field name="stateId" type="integer" column="state_id"/>
-    <field name="beginAt" type="datetime" column="begin_at"/>
-    <field name="endAt" type="datetime" column="end_at"/>
-    <field name="numberParticipantMin" type="string" column="number_participant_min" length="255"/>
-    <field name="participantsMinNumber" type="integer" column="participants_min_number"/>
-    <field name="participantsMaxNumber" type="integer" column="participants_max_number"/>
-    <field name="childCare" type="boolean" column="child_care"/>
-    <field name="publishAt" type="datetime" column="publish_at"/>
-    <field name="description" type="text" column="description"/>
-    <field name="charge" type="integer" column="charge"/>
-    <field name="externUrl" type="string" column="extern_url" length="255"/>
-    <field name="graduationYear" type="integer" column="graduation_year"/>
-    <field name="createdAt" type="datetime" column="created_at"/>
-    <field name="updatedAt" type="datetime" column="updated_at"/>
+    <field name="courseId" type="integer" column="course_id" nullable="false"/>
+    <field name="stateId" type="integer" column="state_id" nullable="false"/>
+    <field name="beginAt" type="datetime" column="begin_at" nullable="false"/>
+    <field name="endAt" type="datetime" column="end_at" nullable="false"/>
+    <field name="graduationYears" type="string" column="graduation_years" length="255" nullable="false"/>
+    <field name="participantsMinNumber" type="integer" column="participants_min_number" nullable="false"/>
+    <field name="participantsMaxNumber" type="integer" column="participants_max_number" nullable="false"/>
+    <field name="childCare" type="boolean" column="child_care" nullable="true"/>
+    <field name="publishAt" type="datetime" column="publish_at" nullable="false"/>
+    <field name="description" type="text" column="description" nullable="false"/>
+    <field name="charge" type="integer" column="charge" nullable="false"/>
+    <field name="externUrl" type="string" column="extern_url" length="255" nullable="true"/>
+    <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
+    <field name="updatedAt" type="datetime" column="updated_at" nullable="false"/>
   </entity>
 </doctrine-mapping>

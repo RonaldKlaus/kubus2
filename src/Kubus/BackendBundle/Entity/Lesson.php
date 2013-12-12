@@ -35,11 +35,6 @@ class Lesson
     private $endAt;
 
     /**
-     * @var string
-     */
-    private $numberParticipantMin;
-
-    /**
      * @var integer
      */
     private $participantsMinNumber;
@@ -75,9 +70,9 @@ class Lesson
     private $externUrl;
 
     /**
-     * @var integer
+     * @var string
      */
-    private $graduationYear;
+    private $graduationYears;
 
     /**
      * @var \DateTime
@@ -194,29 +189,6 @@ class Lesson
     public function getEndAt()
     {
         return $this->endAt;
-    }
-
-    /**
-     * Set numberParticipantMin
-     *
-     * @param string $numberParticipantMin
-     * @return Lesson
-     */
-    public function setNumberParticipantMin($numberParticipantMin)
-    {
-        $this->numberParticipantMin = $numberParticipantMin;
-
-        return $this;
-    }
-
-    /**
-     * Get numberParticipantMin
-     *
-     * @return string
-     */
-    public function getNumberParticipantMin()
-    {
-        return $this->numberParticipantMin;
     }
 
     /**
@@ -383,24 +355,24 @@ class Lesson
     /**
      * Set graduationYear
      *
-     * @param integer $graduationYear
+     * @param integer $graduationYears
      * @return Lesson
      */
-    public function setGraduationYear($graduationYear)
+    public function setGraduationYears($graduationYears)
     {
-        $this->graduationYear = $graduationYear;
+        $this->graduationYears = $graduationYears;
 
         return $this;
     }
 
     /**
-     * Get graduationYear
+     * Get graduationYears
      *
-     * @return integer
+     * @return string
      */
-    public function getGraduationYear()
+    public function getGraduationYears()
     {
-        return $this->graduationYear;
+        return $this->graduationYears;
     }
 
     /**

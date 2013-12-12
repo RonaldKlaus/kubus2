@@ -1,6 +1,6 @@
-{% extends 'KubusBackendBundle::layout.html.twig' %}
+{% extends '::base.html.twig' %}
 
-{% block content -%}
+{% block body -%}
     <h1>Lesson</h1>
 
     <table class="record_properties">
@@ -20,10 +20,6 @@
             <tr>
                 <th>Endat</th>
                 <td>{{ entity.endAt|date('Y-m-d H:i:s') }}</td>
-            </tr>
-            <tr>
-                <th>Numberparticipantmin</th>
-                <td>{{ entity.numberParticipantMin }}</td>
             </tr>
             <tr>
                 <th>Participantsminnumber</th>
@@ -54,8 +50,8 @@
                 <td>{{ entity.externUrl }}</td>
             </tr>
             <tr>
-                <th>Graduationyear</th>
-                <td>{{ entity.graduationYear }}</td>
+                <th>Graduationyears</th>
+                <td>{{ entity.graduationYears }}</td>
             </tr>
             <tr>
                 <th>Createdat</th>

@@ -17,13 +17,14 @@ class CourseType extends AbstractType
         $builder
             ->add('number')
             ->add('title')
-            ->add('doctoralProgramId')
+            ->add('categoryId')
+            ->add('programId')
             ->add('comment')
             ->add('createdAt')
             ->add('updatedAt')
         ;
     }
-    
+
     /**
      * @param OptionsResolverInterface $resolver
      */
