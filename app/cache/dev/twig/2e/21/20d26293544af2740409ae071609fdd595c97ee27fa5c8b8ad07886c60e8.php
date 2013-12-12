@@ -1301,12 +1301,12 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
         // line 469
         ob_start();
         // line 471
-        $context["__internal_2bc1b6300d2e3e3abc5b939a3fda065d302277343d67e88e056d3124c74da950"] = $this->env->loadTemplate("MopaBootstrapBundle::icons.html.twig");
+        $context["__internal_a9a49cdf0585665f44e9724d96d2a83ed72e4beec5e24edca5d2cc026b46ac26"] = $this->env->loadTemplate("MopaBootstrapBundle::icons.html.twig");
         // line 472
         $context["widget_addon_icon"] = (($this->getAttribute((isset($context["widget_addon"]) ? $context["widget_addon"] : null), "icon", array(), "any", true, true)) ? ($this->getAttribute((isset($context["widget_addon"]) ? $context["widget_addon"] : $this->getContext($context, "widget_addon")), "icon")) : (null));
         // line 473
         echo "    <span class=\"input-group-addon\">";
-        echo (((($this->getAttribute((isset($context["widget_addon"]) ? $context["widget_addon"] : null), "text", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute((isset($context["widget_addon"]) ? $context["widget_addon"] : null), "text"), false)) : (false))) ? ($this->env->getExtension('translator')->trans($this->getAttribute((isset($context["widget_addon"]) ? $context["widget_addon"] : $this->getContext($context, "widget_addon")), "text"), array(), (isset($context["translation_domain"]) ? $context["translation_domain"] : $this->getContext($context, "translation_domain")))) : ($context["__internal_2bc1b6300d2e3e3abc5b939a3fda065d302277343d67e88e056d3124c74da950"]->geticon((isset($context["widget_addon_icon"]) ? $context["widget_addon_icon"] : $this->getContext($context, "widget_addon_icon")))));
+        echo (((($this->getAttribute((isset($context["widget_addon"]) ? $context["widget_addon"] : null), "text", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute((isset($context["widget_addon"]) ? $context["widget_addon"] : null), "text"), false)) : (false))) ? ($this->env->getExtension('translator')->trans($this->getAttribute((isset($context["widget_addon"]) ? $context["widget_addon"] : $this->getContext($context, "widget_addon")), "text"), array(), (isset($context["translation_domain"]) ? $context["translation_domain"] : $this->getContext($context, "translation_domain")))) : ($context["__internal_a9a49cdf0585665f44e9724d96d2a83ed72e4beec5e24edca5d2cc026b46ac26"]->geticon((isset($context["widget_addon_icon"]) ? $context["widget_addon_icon"] : $this->getContext($context, "widget_addon_icon")))));
         echo "</span>
 ";
         echo trim(preg_replace('/>\s+</', '><', ob_get_clean()));
@@ -1370,7 +1370,7 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
                 if (($this->getAttribute((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), "parent") == null)) {
                     // line 490
                     echo "            ";
-                    $context["__internal_60067c6ff89c1a94cf24588cfcb545c53d97591f1aa0d7fcfc3ed0a175be6365"] = $this->env->loadTemplate("MopaBootstrapBundle::flash.html.twig");
+                    $context["__internal_eb05a0ad6c399446e0dd1782911e6fb994e7a86a42ad3d6b867f7949e5e638d7"] = $this->env->loadTemplate("MopaBootstrapBundle::flash.html.twig");
                     // line 491
                     echo "            ";
                     $context['_parent'] = (array) $context;
@@ -1378,7 +1378,7 @@ $this->env->getExtension('form')->renderer->searchAndRenderBlock($this->getAttri
                     foreach ($context['_seq'] as $context["_key"] => $context["error"]) {
                         // line 492
                         echo "                ";
-                        echo $context["__internal_60067c6ff89c1a94cf24588cfcb545c53d97591f1aa0d7fcfc3ed0a175be6365"]->getflash("danger", (((null === $this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messagePluralization"))) ? ($this->env->getExtension('translator')->trans($this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messageTemplate"), $this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messageParameters"), "validators")) : ($this->env->getExtension('translator')->transchoice($this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messageTemplate"), $this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messagePluralization"), $this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messageParameters"), "validators"))));
+                        echo $context["__internal_eb05a0ad6c399446e0dd1782911e6fb994e7a86a42ad3d6b867f7949e5e638d7"]->getflash("danger", (((null === $this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messagePluralization"))) ? ($this->env->getExtension('translator')->trans($this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messageTemplate"), $this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messageParameters"), "validators")) : ($this->env->getExtension('translator')->transchoice($this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messageTemplate"), $this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messagePluralization"), $this->getAttribute((isset($context["error"]) ? $context["error"] : $this->getContext($context, "error")), "messageParameters"), "validators"))));
                         // line 497
                         echo "
             ";

@@ -22,7 +22,27 @@ class Course
     /**
      * @var string
      */
-    private $title;
+    private $label;
+
+    /**
+     * @var string
+     */
+    private $description;
+
+    /**
+     * @var string
+     */
+    private $labelShort;
+
+    /**
+     * @var integer
+     */
+    private $audienceId;
+
+    /**
+     * @var integer
+     */
+    private $hours;
 
     /**
      * @var integer
@@ -32,12 +52,7 @@ class Course
     /**
      * @var integer
      */
-    private $categoryId;
-
-    /**
-     * @var string
-     */
-    private $comment;
+    private $subCategoryId;
 
     /**
      * @var \DateTime
@@ -84,26 +99,118 @@ class Course
     }
 
     /**
-     * Set title
+     * Set description
      *
-     * @param string $title
+     * @param string $description
      * @return Course
      */
-    public function setTitle($title)
+    public function setDescription($description)
     {
-        $this->title = $title;
+        $this->description = $description;
 
         return $this;
     }
 
     /**
-     * Get title
+     * Get description
      *
      * @return string
      */
-    public function getTitle()
+    public function getDescription()
     {
-        return $this->title;
+        return $this->description;
+    }
+
+    /**
+     * Set label
+     *
+     * @param string $label
+     * @return Course
+     */
+    public function setLabel($label)
+    {
+        $this->label = $label;
+
+        return $this;
+    }
+
+    /**
+     * Get label
+     *
+     * @return string
+     */
+    public function getLabel()
+    {
+        return $this->label;
+    }
+
+    /**
+     * Set label_short
+     *
+     * @param string $label_short
+     * @return Course
+     */
+    public function setLabelShort($labelShort)
+    {
+        $this->label = $labelShort;
+
+        return $this;
+    }
+
+    /**
+     * Get labelShort
+     *
+     * @return string
+     */
+    public function getLabelShort()
+    {
+        return $this->labelShort;
+    }
+
+    /**
+     * Get audienceId
+     *
+     * @return integer
+     */
+    public function getAudienceId()
+    {
+        return $this->audienceId;
+    }
+
+    /**
+     * Set audienceId
+     *
+     * @param integer $audienceId
+     * @return Course
+     */
+    public function setAudienceId($audienceId)
+    {
+        $this->audienceId = $audienceId;
+
+        return $this;
+    }
+
+    /**
+     * Get hours
+     *
+     * @return integer
+     */
+    public function getHours()
+    {
+        return $this->hours;
+    }
+
+    /**
+     * Set hours
+     *
+     * @param integer $hours
+     * @return Course
+     */
+    public function setHours($hours)
+    {
+        $this->hours = $hours;
+
+        return $this;
     }
 
     /**
@@ -130,49 +237,26 @@ class Course
     }
 
     /**
-     * Set categoryId
+     * Set subCategoryId
      *
-     * @param integer $categoryId
+     * @param integer $subCategoryId
      * @return Course
      */
-    public function setCategoryId($categoryId)
+    public function setSubCategoryId($subCategoryId)
     {
-        $this->categoryId = $categoryId;
+        $this->subCategoryId = $subCategoryId;
 
         return $this;
     }
 
     /**
-     * Get categoryId
+     * Get subCategoryId
      *
      * @return integer
      */
-    public function getCategoryId()
+    public function getSubCategoryId()
     {
-        return $this->categoryId;
-    }
-
-    /**
-     * Set comment
-     *
-     * @param string $comment
-     * @return Course
-     */
-    public function setComment($comment)
-    {
-        $this->comment = $comment;
-
-        return $this;
-    }
-
-    /**
-     * Get comment
-     *
-     * @return string
-     */
-    public function getComment()
-    {
-        return $this->comment;
+        return $this->subCategoryId;
     }
 
     /**

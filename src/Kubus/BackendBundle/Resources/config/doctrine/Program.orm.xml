@@ -5,7 +5,7 @@
       <generator strategy="SEQUENCE"/>
     </id>
     <field name="title" type="string" column="title" length="255" nullable="false"/>
-    <field name="description" type="string" column="description" length="255" nullable="false"/>
+    <field name="description" type="text" column="description" nullable="false"/>
     <field name="email" type="string" column="email" length="255" nullable="false"/>
     <field name="domainId" type="integer" column="domain_id" nullable="false"/>
     <field name="createdAt" type="datetime" column="created_at" nullable="false"/>

@@ -5,11 +5,14 @@
       <generator strategy="SEQUENCE"/>
     </id>
     <field name="number" type="string" column="number" length="255" nullable="false"/>
-    <field name="title" type="string" column="title" length="255" nullable="false"/>
+    <field name="label" type="string" column="label" length="255" nullable="false"/>
+    <field name="labelShort" type="string" column="label_short" length="255" nullable="false"/>
+    <field name="description" type="text" column="description" nullable="false"/>
     <field name="programId" type="integer" column="program_id" nullable="false"/>
-    <field name="comment" type="string" column="comment" length="255" nullable="false"/>
+    <field name="audienceId" type="integer" column="audience_id" nullable="false"/>
+    <field name="hours" type="integer" column="hours" nullable="false"/>
     <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
     <field name="updatedAt" type="datetime" column="updated_at" nullable="false"/>
-    <field name="categoryId" type="integer" column="category_id" nullable="false"/>
+    <field name="subCategoryId" type="integer" column="sub_category_id" nullable="false"/>
   </entity>
 </doctrine-mapping>

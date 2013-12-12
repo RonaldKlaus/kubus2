@@ -16,10 +16,13 @@ class CourseType extends AbstractType
     {
         $builder
             ->add('number')
-            ->add('title')
-            ->add('categoryId')
+            ->add('label')
+            ->add('labelShort')
+            ->add('description')
+            ->add('subCategoryId')
+            ->add('audienceId')
             ->add('programId')
-            ->add('comment')
+            ->add('hours')
             ->add('createdAt')
             ->add('updatedAt')
         ;

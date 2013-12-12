@@ -32,7 +32,7 @@ class __TwigTemplate_4c28ebf893d5e147534a8ca5dfe31c37890155f8a0b28dfc96f5dc3c258
         // line 5
         $context["macros"] = $this->env->loadTemplate("knp_menu.html.twig");
         // line 6
-        $context["__internal_347d9a813479788dc4324d002bfaa731aaf4392779624abd2fc965b0aba2b19b"] = $this->env->loadTemplate("MopaBootstrapBundle::icons.html.twig");
+        $context["__internal_85f2b3cdcd16801cd031e14374686382b8fc92249d214c3a61c3638e3a4bc8ad"] = $this->env->loadTemplate("MopaBootstrapBundle::icons.html.twig");
         // line 7
         echo "<a href=\"";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["item"]) ? $context["item"] : $this->getContext($context, "item")), "uri"), "html", null, true);
@@ -44,7 +44,7 @@ class __TwigTemplate_4c28ebf893d5e147534a8ca5dfe31c37890155f8a0b28dfc96f5dc3c258
         if ((($this->getAttribute($this->getAttribute((isset($context["item"]) ? $context["item"] : null), "extras", array(), "any", false, true), "icon", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute($this->getAttribute((isset($context["item"]) ? $context["item"] : null), "extras", array(), "any", false, true), "icon"), false)) : (false))) {
             // line 9
             echo "    ";
-            echo $context["__internal_347d9a813479788dc4324d002bfaa731aaf4392779624abd2fc965b0aba2b19b"]->geticon($this->getAttribute($this->getAttribute((isset($context["item"]) ? $context["item"] : $this->getContext($context, "item")), "extras"), "icon"), (($this->getAttribute($this->getAttribute((isset($context["item"]) ? $context["item"] : null), "extras", array(), "any", false, true), "icon_white", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute($this->getAttribute((isset($context["item"]) ? $context["item"] : null), "extras", array(), "any", false, true), "icon_white"), false)) : (false)));
+            echo $context["__internal_85f2b3cdcd16801cd031e14374686382b8fc92249d214c3a61c3638e3a4bc8ad"]->geticon($this->getAttribute($this->getAttribute((isset($context["item"]) ? $context["item"] : $this->getContext($context, "item")), "extras"), "icon"), (($this->getAttribute($this->getAttribute((isset($context["item"]) ? $context["item"] : null), "extras", array(), "any", false, true), "icon_white", array(), "any", true, true)) ? (_twig_default_filter($this->getAttribute($this->getAttribute((isset($context["item"]) ? $context["item"] : null), "extras", array(), "any", false, true), "icon_white"), false)) : (false)));
             echo "
 ";
         }
