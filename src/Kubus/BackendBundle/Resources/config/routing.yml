@@ -1,3 +1,7 @@
+KubusBackendBundle_applicationstate:
+  resource: "@KubusBackendBundle/Resources/config/routing/applicationstate.yml"
+  prefix:   /applicationstate
+
 KubusBackendBundle_manager:
   resource: "@KubusBackendBundle/Resources/config/routing/manager.yml"
   prefix:   /manager

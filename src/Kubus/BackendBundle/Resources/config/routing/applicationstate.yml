@@ -1,0 +1,30 @@
+applicationstate:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:ApplicationState:index" }
+
+applicationstate_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:ApplicationState:show" }
+
+applicationstate_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:ApplicationState:new" }
+
+applicationstate_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:ApplicationState:create" }
+    requirements: { _method: post }
+
+applicationstate_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:ApplicationState:edit" }
+
+applicationstate_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:ApplicationState:update" }
+    requirements: { _method: post|put }
+
+applicationstate_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:ApplicationState:delete" }
+    requirements: { _method: post|delete }
