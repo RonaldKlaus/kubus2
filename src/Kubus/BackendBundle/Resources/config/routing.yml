@@ -1,3 +1,7 @@
+KubusBackendBundle_comment:
+  resource: "@KubusBackendBundle/Resources/config/routing/comment.yml"
+  prefix:   /comment
+
 KubusBackendBundle_message:
   resource: "@KubusBackendBundle/Resources/config/routing/message.yml"
   prefix:   /message
