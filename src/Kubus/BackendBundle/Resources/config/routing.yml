@@ -1,3 +1,7 @@
+KubusBackendBundle_text:
+  resource: "@KubusBackendBundle/Resources/config/routing/text.yml"
+  prefix:   /text
+
 KubusBackendBundle_mail:
   resource: "@KubusBackendBundle/Resources/config/routing/mail.yml"
   prefix:   /mail

@@ -1,0 +1,30 @@
+text:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:Text:index" }
+
+text_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:Text:show" }
+
+text_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:Text:new" }
+
+text_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:Text:create" }
+    requirements: { _method: post }
+
+text_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:Text:edit" }
+
+text_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:Text:update" }
+    requirements: { _method: post|put }
+
+text_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:Text:delete" }
+    requirements: { _method: post|delete }
