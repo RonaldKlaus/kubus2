@@ -1,3 +1,7 @@
+KubusBackendBundle_lessonlocation:
+  resource: "@KubusBackendBundle/Resources/config/routing/lessonlocation.yml"
+  prefix:   /lessonlocation
+
 KubusBackendBundle_lessondate:
   resource: "@KubusBackendBundle/Resources/config/routing/lessondate.yml"
   prefix:   /lessondate

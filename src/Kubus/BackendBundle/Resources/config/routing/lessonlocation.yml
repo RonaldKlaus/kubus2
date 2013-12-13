@@ -1,0 +1,30 @@
+lessonlocation:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:LessonLocation:index" }
+
+lessonlocation_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:LessonLocation:show" }
+
+lessonlocation_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:LessonLocation:new" }
+
+lessonlocation_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:LessonLocation:create" }
+    requirements: { _method: post }
+
+lessonlocation_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:LessonLocation:edit" }
+
+lessonlocation_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:LessonLocation:update" }
+    requirements: { _method: post|put }
+
+lessonlocation_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:LessonLocation:delete" }
+    requirements: { _method: post|delete }
