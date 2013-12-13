@@ -1,3 +1,7 @@
+KubusBackendBundle_financedata:
+  resource: "@KubusBackendBundle/Resources/config/routing/financedata.yml"
+  prefix:   /financedata
+
 KubusBackendBundle_phddata:
   resource: "@KubusBackendBundle/Resources/config/routing/phddata.yml"
   prefix:   /phddata
@@ -89,10 +93,6 @@ KubusBackendBundle_lesson:
 kubus_backend_person:
   resource: "@KubusBackendBundle/Resources/config/routing/person.yml"
   prefix: /person
-
-KubusBackendBundle_teacher:
-  resource: "@KubusBackendBundle/Resources/config/routing/teacher.yml"
-  prefix:   /teacher
 
 KubusBackendBundle_course:
   resource: "@KubusBackendBundle/Resources/config/routing/course.yml"

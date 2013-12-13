@@ -1,0 +1,30 @@
+financedata:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:FinanceData:index" }
+
+financedata_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:FinanceData:show" }
+
+financedata_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:FinanceData:new" }
+
+financedata_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:FinanceData:create" }
+    requirements: { _method: post }
+
+financedata_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:FinanceData:edit" }
+
+financedata_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:FinanceData:update" }
+    requirements: { _method: post|put }
+
+financedata_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:FinanceData:delete" }
+    requirements: { _method: post|delete }
