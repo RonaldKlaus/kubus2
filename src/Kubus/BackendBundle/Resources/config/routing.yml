@@ -1,3 +1,7 @@
+KubusBackendBundle_role:
+  resource: "@KubusBackendBundle/Resources/config/routing/role.yml"
+  prefix:   /role
+
 KubusBackendBundle_attributes:
   resource: "@KubusBackendBundle/Resources/config/routing/attributes.yml"
   prefix:   /attributes
