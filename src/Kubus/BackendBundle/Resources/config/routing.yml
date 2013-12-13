@@ -1,3 +1,7 @@
+KubusBackendBundle_subcategory:
+  resource: "@KubusBackendBundle/Resources/config/routing/subcategory.yml"
+  prefix:   /subcategory
+
 KubusBackendBundle_category:
   resource: "@KubusBackendBundle/Resources/config/routing/category.yml"
   prefix:   /category

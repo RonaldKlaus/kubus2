@@ -1,0 +1,30 @@
+subcategory:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:SubCategory:index" }
+
+subcategory_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:SubCategory:show" }
+
+subcategory_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:SubCategory:new" }
+
+subcategory_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:SubCategory:create" }
+    requirements: { _method: post }
+
+subcategory_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:SubCategory:edit" }
+
+subcategory_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:SubCategory:update" }
+    requirements: { _method: post|put }
+
+subcategory_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:SubCategory:delete" }
+    requirements: { _method: post|delete }
