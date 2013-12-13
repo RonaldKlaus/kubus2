@@ -1,3 +1,7 @@
+KubusBackendBundle_message:
+  resource: "@KubusBackendBundle/Resources/config/routing/message.yml"
+  prefix:   /message
+
 KubusBackendBundle_sciencedomain:
   resource: "@KubusBackendBundle/Resources/config/routing/sciencedomain.yml"
   prefix:   /sciencedomain
