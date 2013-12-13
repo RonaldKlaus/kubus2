@@ -1,0 +1,67 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>Application list</h1>
+
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Personid</th>
+                <th>Lessonid</th>
+                <th>Stateid</th>
+                <th>Invitedat</th>
+                <th>Certifiedat</th>
+                <th>Paid</th>
+                <th>Invoice</th>
+                <th>Invoicesend</th>
+                <th>Credits</th>
+                <th>Mark</th>
+                <th>Childcare</th>
+                <th>Liabletopay</th>
+                <th>Createdat</th>
+                <th>Updatedat</th>
+                <th>Id</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td><a href="{{ path('application_show', { 'id': entity.id }) }}">{{ entity.personId }}</a></td>
+                <td>{{ entity.lessonId }}</td>
+                <td>{{ entity.stateId }}</td>
+                <td>{% if entity.invitedAt %}{{ entity.invitedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.certifiedAt %}{{ entity.certifiedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.paid }}</td>
+                <td>{{ entity.invoice }}</td>
+                <td>{{ entity.invoiceSend }}</td>
+                <td>{{ entity.credits }}</td>
+                <td>{{ entity.mark }}</td>
+                <td>{{ entity.childCare }}</td>
+                <td>{{ entity.liableToPay }}</td>
+                <td>{% if entity.createdAt %}{{ entity.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{% if entity.updatedAt %}{{ entity.updatedAt|date('Y-m-d H:i:s') }}{% endif %}</td>
+                <td>{{ entity.id }}</td>
+                <td>
+                <ul>
+                    <li>
+                        <a href="{{ path('application_show', { 'id': entity.id }) }}">show</a>
+                    </li>
+                    <li>
+                        <a href="{{ path('application_edit', { 'id': entity.id }) }}">edit</a>
+                    </li>
+                </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+        <ul>
+        <li>
+            <a href="{{ path('application_new') }}">
+                Create a new entry
+            </a>
+        </li>
+    </ul>
+    {% endblock %}

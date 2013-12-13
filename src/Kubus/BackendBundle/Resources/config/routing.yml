@@ -1,3 +1,7 @@
+KubusBackendBundle_application:
+  resource: "@KubusBackendBundle/Resources/config/routing/application.yml"
+  prefix:   /application
+
 KubusBackendBundle_lessonteacher:
   resource: "@KubusBackendBundle/Resources/config/routing/lessonteacher.yml"
   prefix:   /lessonteacher
