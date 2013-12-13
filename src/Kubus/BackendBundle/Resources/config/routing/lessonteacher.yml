@@ -1,0 +1,30 @@
+lessonteacher:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:LessonTeacher:index" }
+
+lessonteacher_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:LessonTeacher:show" }
+
+lessonteacher_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:LessonTeacher:new" }
+
+lessonteacher_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:LessonTeacher:create" }
+    requirements: { _method: post }
+
+lessonteacher_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:LessonTeacher:edit" }
+
+lessonteacher_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:LessonTeacher:update" }
+    requirements: { _method: post|put }
+
+lessonteacher_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:LessonTeacher:delete" }
+    requirements: { _method: post|delete }
