@@ -1,3 +1,7 @@
+KubusBackendBundle_phddata:
+  resource: "@KubusBackendBundle/Resources/config/routing/phddata.yml"
+  prefix:   /phddata
+
 KubusBackendBundle_text:
   resource: "@KubusBackendBundle/Resources/config/routing/text.yml"
   prefix:   /text

@@ -1,0 +1,52 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>PhdData</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Personid</th>
+                <td>{{ entity.personId }}</td>
+            </tr>
+            <tr>
+                <th>Programid</th>
+                <td>{{ entity.programId }}</td>
+            </tr>
+            <tr>
+                <th>Programacceptanceat</th>
+                <td>{{ entity.programAcceptanceAt|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Phdacceptanceat</th>
+                <td>{{ entity.phdAcceptanceAt|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Createdat</th>
+                <td>{{ entity.createdAt|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Updatedat</th>
+                <td>{{ entity.updatedAt|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('phddata') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('phddata_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

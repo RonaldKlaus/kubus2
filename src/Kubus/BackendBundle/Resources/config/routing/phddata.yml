@@ -1,0 +1,30 @@
+phddata:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:PhdData:index" }
+
+phddata_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:PhdData:show" }
+
+phddata_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:PhdData:new" }
+
+phddata_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:PhdData:create" }
+    requirements: { _method: post }
+
+phddata_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:PhdData:edit" }
+
+phddata_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:PhdData:update" }
+    requirements: { _method: post|put }
+
+phddata_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:PhdData:delete" }
+    requirements: { _method: post|delete }
