@@ -1,3 +1,7 @@
+KubusBackendBundle_tool:
+  resource: "@KubusBackendBundle/Resources/config/routing/tool.yml"
+  prefix:   /tool
+
 KubusBackendBundle_application:
   resource: "@KubusBackendBundle/Resources/config/routing/application.yml"
   prefix:   /application

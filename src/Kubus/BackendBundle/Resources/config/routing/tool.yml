@@ -1,0 +1,30 @@
+tool:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:Tool:index" }
+
+tool_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:Tool:show" }
+
+tool_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:Tool:new" }
+
+tool_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:Tool:create" }
+    requirements: { _method: post }
+
+tool_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:Tool:edit" }
+
+tool_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:Tool:update" }
+    requirements: { _method: post|put }
+
+tool_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:Tool:delete" }
+    requirements: { _method: post|delete }
