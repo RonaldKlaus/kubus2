@@ -1,0 +1,52 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <h1>LessonDate</h1>
+
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>Lessonid</th>
+                <td>{{ entity.lessonId }}</td>
+            </tr>
+            <tr>
+                <th>Locationid</th>
+                <td>{{ entity.locationId }}</td>
+            </tr>
+            <tr>
+                <th>Beginat</th>
+                <td>{{ entity.beginAt|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Endat</th>
+                <td>{{ entity.endAt|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Createdat</th>
+                <td>{{ entity.createdAt|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Updatedat</th>
+                <td>{{ entity.updatedAt|date('Y-m-d H:i:s') }}</td>
+            </tr>
+            <tr>
+                <th>Id</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+        <ul class="record_actions">
+    <li>
+        <a href="{{ path('lessondate') }}">
+            Back to the list
+        </a>
+    </li>
+    <li>
+        <a href="{{ path('lessondate_edit', { 'id': entity.id }) }}">
+            Edit
+        </a>
+    </li>
+    <li>{{ form(delete_form) }}</li>
+</ul>
+{% endblock %}

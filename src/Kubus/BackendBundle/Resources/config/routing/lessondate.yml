@@ -1,0 +1,30 @@
+lessondate:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:LessonDate:index" }
+
+lessondate_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:LessonDate:show" }
+
+lessondate_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:LessonDate:new" }
+
+lessondate_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:LessonDate:create" }
+    requirements: { _method: post }
+
+lessondate_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:LessonDate:edit" }
+
+lessondate_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:LessonDate:update" }
+    requirements: { _method: post|put }
+
+lessondate_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:LessonDate:delete" }
+    requirements: { _method: post|delete }
