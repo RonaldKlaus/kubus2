@@ -1,0 +1,30 @@
+attributes:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:Attributes:index" }
+
+attributes_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:Attributes:show" }
+
+attributes_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:Attributes:new" }
+
+attributes_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:Attributes:create" }
+    requirements: { _method: post }
+
+attributes_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:Attributes:edit" }
+
+attributes_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:Attributes:update" }
+    requirements: { _method: post|put }
+
+attributes_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:Attributes:delete" }
+    requirements: { _method: post|delete }
