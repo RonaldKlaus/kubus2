@@ -1,3 +1,7 @@
+KubusBackendBundle_audience:
+  resource: "@KubusBackendBundle/Resources/config/routing/audience.yml"
+  prefix:   /audience
+
 KubusBackendBundle_subcategory:
   resource: "@KubusBackendBundle/Resources/config/routing/subcategory.yml"
   prefix:   /subcategory

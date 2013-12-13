@@ -1,0 +1,30 @@
+audience:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:Audience:index" }
+
+audience_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:Audience:show" }
+
+audience_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:Audience:new" }
+
+audience_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:Audience:create" }
+    requirements: { _method: post }
+
+audience_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:Audience:edit" }
+
+audience_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:Audience:update" }
+    requirements: { _method: post|put }
+
+audience_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:Audience:delete" }
+    requirements: { _method: post|delete }
