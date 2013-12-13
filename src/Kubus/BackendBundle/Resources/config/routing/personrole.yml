@@ -1,0 +1,30 @@
+personrole:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:PersonRole:index" }
+
+personrole_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:PersonRole:show" }
+
+personrole_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:PersonRole:new" }
+
+personrole_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:PersonRole:create" }
+    requirements: { _method: post }
+
+personrole_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:PersonRole:edit" }
+
+personrole_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:PersonRole:update" }
+    requirements: { _method: post|put }
+
+personrole_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:PersonRole:delete" }
+    requirements: { _method: post|delete }

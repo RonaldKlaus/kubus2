@@ -1,3 +1,7 @@
+KubusBackendBundle_personrole:
+  resource: "@KubusBackendBundle/Resources/config/routing/personrole.yml"
+  prefix:   /personrole
+
 KubusBackendBundle_role:
   resource: "@KubusBackendBundle/Resources/config/routing/role.yml"
   prefix:   /role
