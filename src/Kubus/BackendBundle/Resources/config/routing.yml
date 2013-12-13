@@ -1,3 +1,7 @@
+KubusBackendBundle_manager:
+  resource: "@KubusBackendBundle/Resources/config/routing/manager.yml"
+  prefix:   /manager
+
 KubusBackendBundle_personrole:
   resource: "@KubusBackendBundle/Resources/config/routing/personrole.yml"
   prefix:   /personrole
