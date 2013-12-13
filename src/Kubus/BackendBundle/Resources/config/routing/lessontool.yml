@@ -1,0 +1,30 @@
+lessontool:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:LessonTool:index" }
+
+lessontool_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:LessonTool:show" }
+
+lessontool_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:LessonTool:new" }
+
+lessontool_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:LessonTool:create" }
+    requirements: { _method: post }
+
+lessontool_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:LessonTool:edit" }
+
+lessontool_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:LessonTool:update" }
+    requirements: { _method: post|put }
+
+lessontool_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:LessonTool:delete" }
+    requirements: { _method: post|delete }
