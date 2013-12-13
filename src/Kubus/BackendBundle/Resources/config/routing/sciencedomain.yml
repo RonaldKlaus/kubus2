@@ -1,0 +1,30 @@
+sciencedomain:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:ScienceDomain:index" }
+
+sciencedomain_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:ScienceDomain:show" }
+
+sciencedomain_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:ScienceDomain:new" }
+
+sciencedomain_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:ScienceDomain:create" }
+    requirements: { _method: post }
+
+sciencedomain_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:ScienceDomain:edit" }
+
+sciencedomain_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:ScienceDomain:update" }
+    requirements: { _method: post|put }
+
+sciencedomain_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:ScienceDomain:delete" }
+    requirements: { _method: post|delete }
