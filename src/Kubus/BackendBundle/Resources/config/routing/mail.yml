@@ -1,0 +1,30 @@
+mail:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:Mail:index" }
+
+mail_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:Mail:show" }
+
+mail_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:Mail:new" }
+
+mail_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:Mail:create" }
+    requirements: { _method: post }
+
+mail_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:Mail:edit" }
+
+mail_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:Mail:update" }
+    requirements: { _method: post|put }
+
+mail_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:Mail:delete" }
+    requirements: { _method: post|delete }
