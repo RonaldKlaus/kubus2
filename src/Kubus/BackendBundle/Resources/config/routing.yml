@@ -1,3 +1,7 @@
+KubusBackendBundle_university:
+  resource: "@KubusBackendBundle/Resources/config/routing/university.yml"
+  prefix:   /university
+
 KubusBackendBundle_financedata:
   resource: "@KubusBackendBundle/Resources/config/routing/financedata.yml"
   prefix:   /financedata

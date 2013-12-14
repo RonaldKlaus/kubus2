@@ -1,0 +1,30 @@
+university:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:University:index" }
+
+university_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:University:show" }
+
+university_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:University:new" }
+
+university_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:University:create" }
+    requirements: { _method: post }
+
+university_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:University:edit" }
+
+university_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:University:update" }
+    requirements: { _method: post|put }
+
+university_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:University:delete" }
+    requirements: { _method: post|delete }
