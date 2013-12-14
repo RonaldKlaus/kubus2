@@ -1,0 +1,30 @@
+managerdata:
+    pattern:  /
+    defaults: { _controller: "KubusBackendBundle:ManagerData:index" }
+
+managerdata_show:
+    pattern:  /{id}/show
+    defaults: { _controller: "KubusBackendBundle:ManagerData:show" }
+
+managerdata_new:
+    pattern:  /new
+    defaults: { _controller: "KubusBackendBundle:ManagerData:new" }
+
+managerdata_create:
+    pattern:  /create
+    defaults: { _controller: "KubusBackendBundle:ManagerData:create" }
+    requirements: { _method: post }
+
+managerdata_edit:
+    pattern:  /{id}/edit
+    defaults: { _controller: "KubusBackendBundle:ManagerData:edit" }
+
+managerdata_update:
+    pattern:  /{id}/update
+    defaults: { _controller: "KubusBackendBundle:ManagerData:update" }
+    requirements: { _method: post|put }
+
+managerdata_delete:
+    pattern:  /{id}/delete
+    defaults: { _controller: "KubusBackendBundle:ManagerData:delete" }
+    requirements: { _method: post|delete }
