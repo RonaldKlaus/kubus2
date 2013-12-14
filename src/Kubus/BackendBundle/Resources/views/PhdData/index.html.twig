@@ -8,6 +8,7 @@
             <tr>
                 <th>Personid</th>
                 <th>Programid</th>
+                <th>Universityid</th>
                 <th>Programacceptanceat</th>
                 <th>Phdacceptanceat</th>
                 <th>Createdat</th>
@@ -21,6 +22,7 @@
             <tr>
                 <td><a href="{{ path('phddata_show', { 'id': entity.id }) }}">{{ entity.personId }}</a></td>
                 <td>{{ entity.programId }}</td>
+                <td>{{ entity.universityId }}</td>
                 <td>{% if entity.programAcceptanceAt %}{{ entity.programAcceptanceAt|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{% if entity.phdAcceptanceAt %}{{ entity.phdAcceptanceAt|date('Y-m-d H:i:s') }}{% endif %}</td>
                 <td>{% if entity.createdAt %}{{ entity.createdAt|date('Y-m-d H:i:s') }}{% endif %}</td>

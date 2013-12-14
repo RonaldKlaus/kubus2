@@ -6,6 +6,7 @@
     </id>
     <field name="personId" type="integer" column="person_id"/>
     <field name="programId" type="integer" column="program_id"/>
+    <field name="universityId" type="integer" column="university_id"/>
     <field name="programAcceptanceAt" type="datetime" column="program_acceptance_at"/>
     <field name="phdAcceptanceAt" type="datetime" column="phd_acceptance_at"/>
     <field name="createdAt" type="datetime" column="created_at"/>

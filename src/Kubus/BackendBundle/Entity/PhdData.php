@@ -22,6 +22,11 @@ class PhdData
     /**
      * @var integer
      */
+    private $universityId;
+
+    /**
+     * @var integer
+     */
     private $programId;
 
     /**
@@ -48,7 +53,7 @@ class PhdData
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
@@ -64,18 +69,41 @@ class PhdData
     public function setPersonId($personId)
     {
         $this->personId = $personId;
-    
+
         return $this;
     }
 
     /**
      * Get personId
      *
-     * @return integer 
+     * @return integer
      */
     public function getPersonId()
     {
         return $this->personId;
+    }
+
+    /**
+     * Set universityId
+     *
+     * @param integer $universityId
+     * @return PhdData
+     */
+    public function setUniversityId($universityId)
+    {
+        $this->universityId = $universityId;
+
+        return $this;
+    }
+
+    /**
+     * Get universityId
+     *
+     * @return integer
+     */
+    public function getUniversityId()
+    {
+        return $this->universityId;
     }
 
     /**
@@ -87,14 +115,14 @@ class PhdData
     public function setProgramId($programId)
     {
         $this->programId = $programId;
-    
+
         return $this;
     }
 
     /**
      * Get programId
      *
-     * @return integer 
+     * @return integer
      */
     public function getProgramId()
     {
@@ -110,14 +138,14 @@ class PhdData
     public function setProgramAcceptanceAt($programAcceptanceAt)
     {
         $this->programAcceptanceAt = $programAcceptanceAt;
-    
+
         return $this;
     }
 
     /**
      * Get programAcceptanceAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getProgramAcceptanceAt()
     {
@@ -133,14 +161,14 @@ class PhdData
     public function setPhdAcceptanceAt($phdAcceptanceAt)
     {
         $this->phdAcceptanceAt = $phdAcceptanceAt;
-    
+
         return $this;
     }
 
     /**
      * Get phdAcceptanceAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getPhdAcceptanceAt()
     {
@@ -156,14 +184,14 @@ class PhdData
     public function setCreatedAt($createdAt)
     {
         $this->createdAt = $createdAt;
-    
+
         return $this;
     }
 
     /**
      * Get createdAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getCreatedAt()
     {
@@ -179,14 +207,14 @@ class PhdData
     public function setUpdatedAt($updatedAt)
     {
         $this->updatedAt = $updatedAt;
-    
+
         return $this;
     }
 
     /**
      * Get updatedAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getUpdatedAt()
     {
