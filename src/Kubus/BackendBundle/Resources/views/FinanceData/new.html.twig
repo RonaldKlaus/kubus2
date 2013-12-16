@@ -1,11 +1,11 @@
-{% extends '::base.html.twig' %}
+{% extends 'KubusBackendBundle::Person/new.html.twig' %}
 
-{% block body -%}
+{% block content -%}
     <h1>FinanceData creation</h1>
 
     {{ form(form) }}
 
-        <ul class="record_actions">
+    <ul class="record_actions">
     <li>
         <a href="{{ path('financedata') }}">
             Back to the list

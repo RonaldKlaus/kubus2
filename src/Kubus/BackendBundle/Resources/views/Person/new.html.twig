@@ -4,7 +4,11 @@
     <h1>Person creation</h1>
 
     {{ form(form) }}
-
+    {# {% block roles %} <h1>Rollen</h1> {% endblock %}
+    {% block phd_data %} <h1> PhD-Daten</h1> {% endblock %}
+    {% block finance_data %} <h1>Finanzdaten</h1> {% endblock %}
+    {% block manager_data %} <h1>Managerdaten</h1> {% endblock %}
+ #}
         <ul class="record_actions">
     <li>
         <a href="{{ path('person') }}">
