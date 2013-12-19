@@ -4,13 +4,13 @@
     <id name="id" type="integer" column="id">
       <generator strategy="AUTO"/>
     </id>
-    <field name="street" type="string" column="street" length="255"/>
-    <field name="postcode" type="string" column="postcode" length="255"/>
-    <field name="city" type="string" column="city" length="255"/>
-    <field name="country" type="string" column="country" length="255"/>
-    <field name="room" type="string" column="room" length="255"/>
-    <field name="description" type="text" column="description"/>
-    <field name="createdAt" type="datetime" column="created_at"/>
-    <field name="updatedAt" type="datetime" column="updated_at"/>
+    <field name="street" type="string" column="street" length="255" nullable="false"/>
+    <field name="postcode" type="string" column="postcode" length="255" nullable="false"/>
+    <field name="city" type="string" column="city" length="255" nullable="false"/>
+    <field name="country" type="string" column="country" length="255" nullable="false"/>
+    <field name="room" type="string" column="room" length="255" nullable="false"/>
+    <field name="description" type="text" column="description" nullable="true"/>
+    <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
+    <field name="updatedAt" type="datetime" column="updated_at" nullable="false"/>
   </entity>
 </doctrine-mapping>

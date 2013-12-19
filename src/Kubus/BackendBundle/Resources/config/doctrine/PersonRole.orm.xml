@@ -4,9 +4,9 @@
     <id name="id" type="integer" column="id">
       <generator strategy="AUTO"/>
     </id>
-    <field name="personId" type="integer" column="person_id"/>
-    <field name="roleId" type="integer" column="role_id"/>
-    <field name="createdAt" type="datetime" column="created_at"/>
+    <field name="personId" type="integer" column="person_id" nullable="false"/>
+    <field name="roleId" type="integer" column="role_id" nullable="false"/>
+    <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
     <field name="updatedAt" type="datetime" column="updated_at"/>
   </entity>
 </doctrine-mapping>

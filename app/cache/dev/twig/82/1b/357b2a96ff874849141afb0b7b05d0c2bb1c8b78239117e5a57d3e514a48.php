@@ -7,16 +7,16 @@ class __TwigTemplate_821b357b2a96ff874849141afb0b7b05d0c2bb1c8b78239117e5a57d3e5
     {
         parent::__construct($env);
 
-        $this->parent = $this->env->loadTemplate("KubusBackendBundle::layout.html.twig");
+        $this->parent = $this->env->loadTemplate("::base.html.twig");
 
         $this->blocks = array(
-            'content' => array($this, 'block_content'),
+            'body' => array($this, 'block_body'),
         );
     }
 
     protected function doGetParent(array $context)
     {
-        return "KubusBackendBundle::layout.html.twig";
+        return "::base.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
@@ -25,7 +25,7 @@ class __TwigTemplate_821b357b2a96ff874849141afb0b7b05d0c2bb1c8b78239117e5a57d3e5
     }
 
     // line 3
-    public function block_content($context, array $blocks = array())
+    public function block_body($context, array $blocks = array())
     {
         // line 4
         echo "<h1>Course</h1>

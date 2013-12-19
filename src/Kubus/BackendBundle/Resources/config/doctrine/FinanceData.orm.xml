@@ -11,7 +11,7 @@
     <field name="bankCode" type="string" column="bank_code" length="255"/>
     <field name="bankName" type="string" column="bank_name" length="255"/>
     <field name="firm" type="string" column="firm" length="255"/>
-    <field name="description" type="text" column="description"/>
+    <field name="description" type="text" column="description" nullable="true"/>
     <field name="createdAt" type="datetime" column="created_at"/>
     <field name="updatedAt" type="datetime" column="updated_at"/>
   </entity>

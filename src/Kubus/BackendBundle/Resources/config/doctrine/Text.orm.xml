@@ -4,9 +4,9 @@
     <id name="id" type="integer" column="id">
       <generator strategy="AUTO"/>
     </id>
-    <field name="subject" type="string" column="subject" length="255"/>
-    <field name="message" type="text" column="message"/>
-    <field name="createdAt" type="datetime" column="created_at"/>
-    <field name="updatedAt" type="datetime" column="updated_at"/>
+    <field name="subject" type="string" column="subject" length="255" nullable="false"/>
+    <field name="message" type="text" column="message" nullable="false"/>
+    <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
+    <field name="updatedAt" type="datetime" column="updated_at" nullable="false"/>
   </entity>
 </doctrine-mapping>

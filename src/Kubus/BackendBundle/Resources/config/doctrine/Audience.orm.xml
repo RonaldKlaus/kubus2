@@ -5,7 +5,7 @@
       <generator strategy="AUTO"/>
     </id>
     <field name="label" type="string" column="label" length="255"/>
-    <field name="description" type="text" column="description"/>
+    <field name="description" type="text" column="description" nullable="true"/>
     <field name="createdAt" type="datetime" column="created_at"/>
     <field name="updatedAt" type="datetime" column="updated_at"/>
   </entity>

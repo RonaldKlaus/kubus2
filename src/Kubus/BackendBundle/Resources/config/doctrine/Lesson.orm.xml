@@ -13,7 +13,7 @@
     <field name="participantsMaxNumber" type="integer" column="participants_max_number" nullable="false"/>
     <field name="childCare" type="boolean" column="child_care" nullable="true"/>
     <field name="publishAt" type="datetime" column="publish_at" nullable="false"/>
-    <field name="description" type="text" column="description" nullable="false"/>
+    <field name="description" type="text" column="description" nullable="true"/>
     <field name="charge" type="integer" column="charge" nullable="false"/>
     <field name="externUrl" type="string" column="extern_url" length="255" nullable="true"/>
     <field name="createdAt" type="datetime" column="created_at" nullable="false"/>

@@ -4,10 +4,10 @@
     <id name="id" type="integer" column="id">
       <generator strategy="AUTO"/>
     </id>
-    <field name="messageId" type="integer" column="message_id"/>
-    <field name="comment" type="text" column="comment"/>
-    <field name="personId" type="integer" column="person_id"/>
-    <field name="createdAt" type="datetime" column="created_at"/>
-    <field name="updatedAt" type="datetime" column="updated_at"/>
+    <field name="messageId" type="integer" column="message_id" nullable="false"/>
+    <field name="comment" type="text" column="comment" nullable="false"/>
+    <field name="personId" type="integer" column="person_id" nullable="false"/>
+    <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
+    <field name="updatedAt" type="datetime" column="updated_at" nullable="false"/>
   </entity>
 </doctrine-mapping>

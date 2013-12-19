@@ -4,11 +4,11 @@
     <id name="id" type="integer" column="id">
       <generator strategy="AUTO"/>
     </id>
-    <field name="senderId" type="integer" column="sender_id"/>
-    <field name="receiverId" type="integer" column="receiver_id"/>
-    <field name="messageId" type="integer" column="message_id"/>
-    <field name="attachmentName" type="string" column="attachment_name" length="255"/>
-    <field name="createdAt" type="datetime" column="created_at"/>
-    <field name="updatedAt" type="datetime" column="updated_at"/>
+    <field name="senderId" type="integer" column="sender_id" nullable="false"/>
+    <field name="receiverId" type="integer" column="receiver_id" nullable="false"/>
+    <field name="messageId" type="integer" column="message_id" nullable="false"/>
+    <field name="attachmentName" type="string" column="attachment_name" length="255" nullable="true"/>
+    <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
+    <field name="updatedAt" type="datetime" column="updated_at" nullable="false"/>
   </entity>
 </doctrine-mapping>

@@ -4,17 +4,17 @@
     <id name="id" type="integer" column="id">
       <generator strategy="AUTO"/>
     </id>
-    <field name="personId" type="integer" column="person_id"/>
-    <field name="lessonId" type="integer" column="lesson_id"/>
-    <field name="fee" type="integer" column="fee"/>
-    <field name="hours" type="integer" column="hours"/>
-    <field name="number" type="string" column="number" length="255"/>
+    <field name="personId" type="integer" column="person_id" nullable="false"/>
+    <field name="lessonId" type="integer" column="lesson_id" nullable="false"/>
+    <field name="fee" type="integer" column="fee" nullable="false"/>
+    <field name="hours" type="integer" column="hours" nullable="false"/>
+    <field name="number" type="string" column="number" length="255" nullable="false"/>
     <field name="year" type="integer" column="year"/>
-    <field name="planedHours" type="integer" column="planed_hours"/>
-    <field name="agreements" type="text" column="agreements"/>
-    <field name="travelCosts" type="integer" column="travel_costs"/>
-    <field name="accommodationExpenses" type="text" column="accommodation_expenses"/>
-    <field name="createdAt" type="datetime" column="created_at"/>
-    <field name="updatedAt" type="datetime" column="updated_at"/>
+    <field name="planedHours" type="integer" column="planed_hours" nullable="false"/>
+    <field name="agreements" type="text" column="agreements" nullable="true"/>
+    <field name="travelCosts" type="integer" column="travel_costs" nullable="tue"/>
+    <field name="accommodationExpenses" type="text" column="accommodation_expenses"  nullable="true"/>
+    <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
+    <field name="updatedAt" type="datetime" column="updated_at" nullable="false"/>
   </entity>
 </doctrine-mapping>

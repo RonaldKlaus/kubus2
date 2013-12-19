@@ -145,7 +145,7 @@ class Course
     }
 
     /**
-     * Set label_short
+     * Set labelShort
      *
      * @param string $label_short
      * @return Course

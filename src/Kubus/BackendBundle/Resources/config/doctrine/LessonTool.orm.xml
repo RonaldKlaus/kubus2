@@ -4,9 +4,9 @@
     <id name="id" type="integer" column="id">
       <generator strategy="AUTO"/>
     </id>
-    <field name="lessonId" type="integer" column="lesson_id"/>
-    <field name="toolId" type="integer" column="tool_id"/>
-    <field name="createdAt" type="datetime" column="created_at"/>
-    <field name="updatedAt" type="datetime" column="updated_at"/>
+    <field name="lessonId" type="integer" column="lesson_id" nullable="false"/>
+    <field name="toolId" type="integer" column="tool_id" nullable="false"/>
+    <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
+    <field name="updatedAt" type="datetime" column="updated_at" nullable="false"/>
   </entity>
 </doctrine-mapping>

@@ -4,13 +4,14 @@
     <id name="id" type="integer" column="id">
       <generator strategy="AUTO"/>
     </id>
-    <field name="subject" type="string" column="subject" length="255"/>
-    <field name="message" type="text" column="message"/>
-    <field name="personId" type="integer" column="person_id"/>
-    <field name="aboutCourseId" type="integer" column="about_course_id"/>
-    <field name="aboutPersonId" type="integer" column="about_person_id"/>
-    <field name="aboutLessonId" type="integer" column="about_lesson_id"/>
-    <field name="createdAt" type="datetime" column="created_at"/>
-    <field name="updatedAt" type="datetime" column="updated_at"/>
+    <field name="parentMessageId" type="integer" column="parrend_message_id" nullable="true"/>
+    <field name="subject" type="string" column="subject" length="255" nullable="false"/>
+    <field name="message" type="text" column="message" nullable="false"/>
+    <field name="personId" type="integer" column="person_id" nullable="false"/>
+    <field name="aboutCourseId" type="integer" column="about_course_id" nullable="true"/>
+    <field name="aboutPersonId" type="integer" column="about_person_id" nullable="true"/>
+    <field name="aboutLessonId" type="integer" column="about_lesson_id" nullable="true"/>
+    <field name="createdAt" type="datetime" column="created_at" nullable="false"/>
+    <field name="updatedAt" type="datetime" column="updated_at" nullable="false"/>
   </entity>
 </doctrine-mapping>
