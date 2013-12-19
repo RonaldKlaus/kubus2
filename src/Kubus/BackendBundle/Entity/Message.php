@@ -15,6 +15,11 @@ class Message
     private $id;
 
     /**
+     * @var integer
+     */
+    private $parentMessageId;
+
+    /**
      * @var string
      */
     private $subject;
@@ -58,11 +63,34 @@ class Message
     /**
      * Get id
      *
-     * @return integer 
+     * @return integer
      */
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * Set parentMessageId
+     *
+     * @param integer $parentMessageId
+     * @return Message
+     */
+    public function setParentMessageId($parentMessageId)
+    {
+        $this->parentMessageId = $parentMessageId;
+
+        return $this;
+    }
+
+    /**
+     * Get parentMessageId
+     *
+     * @return integer
+     */
+    public function getParentMessageId()
+    {
+        return $this->parentMessageId;
     }
 
     /**
@@ -74,14 +102,14 @@ class Message
     public function setSubject($subject)
     {
         $this->subject = $subject;
-    
+
         return $this;
     }
 
     /**
      * Get subject
      *
-     * @return string 
+     * @return string
      */
     public function getSubject()
     {
@@ -97,14 +125,14 @@ class Message
     public function setMessage($message)
     {
         $this->message = $message;
-    
+
         return $this;
     }
 
     /**
      * Get message
      *
-     * @return string 
+     * @return string
      */
     public function getMessage()
     {
@@ -120,14 +148,14 @@ class Message
     public function setPersonId($personId)
     {
         $this->personId = $personId;
-    
+
         return $this;
     }
 
     /**
      * Get personId
      *
-     * @return integer 
+     * @return integer
      */
     public function getPersonId()
     {
@@ -143,14 +171,14 @@ class Message
     public function setAboutCourseId($aboutCourseId)
     {
         $this->aboutCourseId = $aboutCourseId;
-    
+
         return $this;
     }
 
     /**
      * Get aboutCourseId
      *
-     * @return integer 
+     * @return integer
      */
     public function getAboutCourseId()
     {
@@ -166,14 +194,14 @@ class Message
     public function setAboutPersonId($aboutPersonId)
     {
         $this->aboutPersonId = $aboutPersonId;
-    
+
         return $this;
     }
 
     /**
      * Get aboutPersonId
      *
-     * @return integer 
+     * @return integer
      */
     public function getAboutPersonId()
     {
@@ -189,14 +217,14 @@ class Message
     public function setAboutLessonId($aboutLessonId)
     {
         $this->aboutLessonId = $aboutLessonId;
-    
+
         return $this;
     }
 
     /**
      * Get aboutLessonId
      *
-     * @return integer 
+     * @return integer
      */
     public function getAboutLessonId()
     {
@@ -212,14 +240,14 @@ class Message
     public function setCreatedAt($createdAt)
     {
         $this->createdAt = $createdAt;
-    
+
         return $this;
     }
 
     /**
      * Get createdAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getCreatedAt()
     {
@@ -235,14 +263,14 @@ class Message
     public function setUpdatedAt($updatedAt)
     {
         $this->updatedAt = $updatedAt;
-    
+
         return $this;
     }
 
     /**
      * Get updatedAt
      *
-     * @return \DateTime 
+     * @return \DateTime
      */
     public function getUpdatedAt()
     {

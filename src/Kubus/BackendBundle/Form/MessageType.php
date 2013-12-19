@@ -17,6 +17,7 @@ class MessageType extends AbstractType
         $builder
             ->add('subject')
             ->add('message')
+            ->add('parentMessageId')
             ->add('personId')
             ->add('aboutCourseId')
             ->add('aboutPersonId')
@@ -25,7 +26,7 @@ class MessageType extends AbstractType
             ->add('updatedAt')
         ;
     }
-    
+
     /**
      * @param OptionsResolverInterface $resolver
      */

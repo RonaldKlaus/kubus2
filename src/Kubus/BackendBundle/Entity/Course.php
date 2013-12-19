@@ -147,7 +147,7 @@ class Course
     /**
      * Set labelShort
      *
-     * @param string $label_short
+     * @param string $labelShort
      * @return Course
      */
     public function setLabelShort($labelShort)
